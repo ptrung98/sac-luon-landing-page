@@ -1,0 +1,104 @@
+.footer {
+  position: relative;
+  background: url("/footer/background.png") center/cover no-repeat; // ảnh nền mờ
+  color: #fff;
+  // padding: 4rem 2rem 2rem;
+  margin-top: 4rem;
+
+  .footer-overlay {
+    background: rgba(12, 0, 34, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 3rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    align-items: start;
+    text-align: left;
+    // padding: 2rem;
+  }
+
+  .footer-logo {
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffdc00;
+      margin-top: 0.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .footer-links {
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+            li {
+        margin-bottom: 2rem;
+
+        a {
+          color: #ccc;
+          text-decoration: none;
+          transition: color 0.2s;
+
+          &:hover {
+            color: #ffdc00;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-contact {
+    h4 {
+      margin-top: 1rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      svg {
+        cursor: pointer;
+        transition: transform 0.2s, color 0.2s;
+        color: #fff;
+
+        &:hover {
+          transform: scale(1.2);
+          color: #ffdc00;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      text-align: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+  }
+}
