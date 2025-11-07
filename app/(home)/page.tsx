@@ -1,48 +1,12 @@
-import Image from "next/image";
 import { Button } from "../components/button";
 
 const Home = () => {
   return (
     <main className="home">
-      <div className="hero-background-container">
-        <Image
-          src="/home/banner.png"
-          alt="Powerbank"
-          fill
-          className="image"
-          priority
-        />
-        <div className="overlay"></div>
-      </div>
-      <header className="header">
-        <Image
-          src="/home/logo.svg"
-          alt="Sạc Luôn Logo"
-          width={195}
-          height={45}
-          priority
-        />
-        <nav className="nav">
-          <a href="#">Trang chủ</a>
-          <a href="#">Sản phẩm</a>
-          <a href="#">Điểm sạc</a>
-          <a href="#">Về Sạc Luôn</a>
-        </nav>
-        <div className="actions">
-          <Button
-            className="btn-lang"
-            type="transparent"
-            outlinePadding="small"
-          >
-            VI
-          </Button>
-          <Button type="primary" outlinePadding="small">
-            Liên hệ
-          </Button>
-        </div>
-      </header>
-
       <section className="hero">
+        <div className="hero-background-container">
+          <div className="overlay"></div>
+        </div>
         <div className="hero-content">
           <h1>SẠC LUÔN</h1>
           <p>
@@ -68,41 +32,59 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="tuturial">
+            <div className="tutorial">
               <p>
                 CẦN HƯỚNG <br /> DẪN SỬ DỤNG?
               </p>
-              <button className="btn-tuturial">TÌM HIỂU NGAY →</button>
+              <button className="btn-tutorial">TÌM HIỂU NGAY →</button>
             </div>
           </div>
         </div>
-      </section>
 
-      <section className="features">
-        <div className="feature-card card-1">
-          <h4>
-            Tiện Lợi <br /> Mọi Lúc, Mọi Nơi
-          </h4>
-          <div className="content">
-            <div className="item">Tìm điểm sạc</div>
-            <div className="item">Hình thức thanh toán</div>
+        <section className="features">
+          <div className="feature-card card-1">
+            <div className="overlay">
+              <h4>
+                Tiện Lợi <br /> Mọi Lúc, Mọi Nơi
+              </h4>
+              <div className="content">
+                <div className="item">Tìm điểm sạc</div>
+                <div className="item">Hình thức thanh toán</div>
+              </div>
+              <Button type="secondary" outlinePadding="medium">
+                Tìm hiểu thêm →
+              </Button>
+            </div>
           </div>
-          <Button type="secondary" outlinePadding="medium">
-            Tìm hiểu thêm →
-          </Button>
-        </div>
-        <div className="feature-card card-2">
-          <h4>PIN ĐỎ SẠC LUÔN LO</h4>
-          <p>Không cần mang theo sạc dự phòng cá nhân.</p>
-          <p>
-            Chúng tôi luôn sẵn sàng hỗ trợ bạn ở mọi nơi – <br />
-            từ quán cà phê đến trung tâm thương mại.
-          </p>
-        </div>
-        <div className="feature-card card-3">
-          <h4>99,7% thiết bị luôn sẵn sàng</h4>
-          <p>Sạc nhanh đủ loại cáp, tương thích mọi thiết bị.</p>
-        </div>
+          <div className="feature-card card-2">
+            <div className="overlay">
+              <div className="content">
+                <h4 className="text-1">
+                  PIN ĐỎ <br /> SẠC LUÔN LO
+                </h4>
+                <br />
+                <p className="text-2">
+                  Không cần mang theo sạc dự phòng cá nhân.
+                </p>
+                <br />
+                <p className="text-3">
+                  Chúng tôi luôn sẵn sàng hỗ trợ bạn ở mọi nơi – <br />
+                  từ quán cà phê đến trung tâm thương mại.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="feature-card card-3">
+            <div className="overlay">
+              <p className="text-1">99,7% </p>
+              <p className="text-2">thiết bị luôn sẵn sàng</p>
+              <h4 className="text-3">
+                sạc nhanh
+                <br /> đủ loại cáp <br /> tương thích với <br /> mọi thiết bị.
+              </h4>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   );
