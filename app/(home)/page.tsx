@@ -2,8 +2,33 @@ import { Button } from "../components/button";
 import { ArrowRightIcon } from "../components/icons/arrow-right";
 import { ArrowRightCircleIcon } from "../components/icons/arrow-right-circle";
 import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
+import Image from "next/image";
 
 const Home = () => {
+  const outstandingFeatureItems = [
+    {
+      title: "Sạc nhanh PD/QC 3.0",
+      description: "đầy pin nhanh chóng chỉ trong 30 phút.",
+      backgroundImage: "/home/outstanding-feature-1.png",
+    },
+    {
+      title: "Đa DẠNG CỔNG SẠC",
+      description:
+        "tương thích tất cả các dòng sạc iPhone, Android, Type-C ....",
+      backgroundImage: "/home/outstanding-feature-2.png",
+    },
+    {
+      title: "Trả pin linh hoạt",
+      description: "nhận và trả pin ở bất kỳ trạm nào trong hệ thống.",
+      backgroundImage: "/home/outstanding-feature-3.png",
+    },
+    {
+      title: "Bảo mật & an toàn",
+      description: "theo dõi giao dịch minh bạch, pin được kiểm định định kỳ.",
+      backgroundImage: "/home/outstanding-feature-4.png",
+    },
+  ];
+
   return (
     <main className="home">
       <section className="hero">
@@ -224,7 +249,13 @@ const Home = () => {
                 Tiện ích vượt trội
               </h1>
               <div className="outstanding-features-title-cta">
-                <span>TẠI SAO SẠCLUÔN VƯỢT TRỘI?</span>
+                <div>
+                  TẠI SAO{" "}
+                  <strong>
+                    <i>SẠC LUÔN</i>
+                  </strong>{" "}
+                  VƯỢT TRỘI?
+                </div>
                 <Button
                   type="primary"
                   outlinePadding="medium"
@@ -235,7 +266,24 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="outstanding-features-container"></div>
+          <div className="outstanding-features-content-container">
+            {outstandingFeatureItems.map((item, index) => (
+              <div className="feature-item" key={index}>
+                <div className="image-container">
+                  <Image
+                    className="image"
+                    src={item.backgroundImage}
+                    alt={item.title}
+                    fill
+                  />
+                </div>
+                <div className="text-container">
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </main>

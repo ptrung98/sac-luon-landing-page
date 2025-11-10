@@ -344,13 +344,10 @@ body {
       text-transform: uppercase;
     }
 
-    .outstanding-features-title-container{
+    .outstanding-features-title-container {
       display: flex;
       justify-content: space-between;
-
-      span{
-        color: #262138; 
-      }
+      color: #262138;
 
       .outstanding-features-title {
         font-size: 4rem;
@@ -360,8 +357,61 @@ body {
         text-transform: uppercase;
       }
 
-      .outstanding-features-title-cta{
+      .outstanding-features-title-cta {
         margin-right: 2rem;
+        div {
+          margin-bottom: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .outstanding-features-content-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+
+    .feature-item {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 1rem;
+      position: relative;
+      aspect-ratio: 1 / 1.25;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(#fff0 12.9%, #fff 81.17%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      .image-container {
+        z-index: -1;
+        flex: 1;
+      }
+      .text-container {
+        flex: 1;
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+          z-index: 1;
+          position: relative;
+          align-self: flex-end;
+          color: #4a4363;
+          // padding-top: 11rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          z-index: 1;
+          position: relative;
+          color: #000000;
+        }
+      }
+
+      .image {
+        z-index: -1;
       }
     }
   }

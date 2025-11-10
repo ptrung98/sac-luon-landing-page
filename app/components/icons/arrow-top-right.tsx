@@ -15,9 +15,9 @@ export const ArrowTopRightIcon = (
       <path
         d="M1.03766 1.03768L13.4897 1.03766M13.4897 1.03766L13.4897 13.4897M13.4897 1.03766L1.03768 13.4897"
         stroke="#282725"
-        stroke-width="2.07534"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.07534"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
