@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "../components/icons/arrow-right";
 import { ArrowRightCircleIcon } from "../components/icons/arrow-right-circle";
 import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
 import Image from "next/image";
+import { NextDoubleArrowIcon } from "../components/icons/next-double-arrow";
 
 const Home = () => {
   const outstandingFeatureItems = [
@@ -29,6 +30,12 @@ const Home = () => {
     },
   ];
 
+  const questions = [
+    "Nếu trạm sạc tôi đến hoàn trả pin đã đầy pin, tôi phải làm gì?",
+    "Hoàn trả pin sạc như thế nào?",
+    "Nếu trạm sạc không có pin, tôi phải làm gì?",
+  ];
+
   return (
     <main className="home">
       <section className="hero">
@@ -46,7 +53,13 @@ const Home = () => {
             <Button
               type="primary"
               outlinePadding="medium"
-              icon={<ArrowTopRightIcon />}
+              icon={
+                <ArrowTopRightIcon
+                  width={12.45}
+                  height={12.45}
+                  style={{ marginLeft: "0.25rem" }}
+                />
+              }
             >
               TÌM CHỖ SẠC NGAY
             </Button>
@@ -159,7 +172,7 @@ const Home = () => {
                 type="primary"
                 outlinePadding="medium"
                 className="whychoose-button"
-                icon={<ArrowRightIcon />}
+                icon={<ArrowRightIcon width={10} height={10} />}
               >
                 XEM NGAY
               </Button>
@@ -229,7 +242,13 @@ const Home = () => {
                 <Button
                   type="primary"
                   outlinePadding="none"
-                  icon={<ArrowTopRightIcon />}
+                  icon={
+                    <ArrowTopRightIcon
+                      width={12}
+                      height={12}
+                      style={{ marginLeft: "0.4rem" }}
+                    />
+                  }
                 >
                   KHÁM PHÁ TRẠM GẦN BẠN
                 </Button>
@@ -257,9 +276,16 @@ const Home = () => {
                   VƯỢT TRỘI?
                 </div>
                 <Button
+                  className="outstanding-features-learn-more-button"
                   type="primary"
                   outlinePadding="medium"
-                  icon={<ArrowTopRightIcon width={12} height={12} />}
+                  icon={
+                    <ArrowTopRightIcon
+                      width={12}
+                      height={12}
+                      style={{ marginLeft: "0.4rem" }}
+                    />
+                  }
                 >
                   TÌM HIỂU THÊM
                 </Button>
@@ -318,11 +344,54 @@ const Home = () => {
                 className="learn-more-button"
                 type="primary"
                 outlinePadding="none"
-                icon={<ArrowTopRightIcon />}
+                icon={
+                  <ArrowTopRightIcon
+                    width={19}
+                    height={19}
+                    style={{ marginLeft: "1rem" }}
+                  />
+                }
               >
-                TÌM HIỂU THÊM
+                <i>TÌM HIỂU THÊM</i>
               </Button>
             </div>
+          </div>
+        </section>
+
+        <section className="customer-stories">
+          <div className="customer-stories-header">
+            <div className="customer-stories-title-container">
+              <h3 className="customer-stories-subtitle text-hightlight-half">
+                Câu chuyện khách hàng
+              </h3>
+              <h1 className="customer-stories-title">
+                Hàng triệu người
+                <br />
+                dùng tin tưởng.
+              </h1>
+            </div>
+            <div className="customer-stories-title-cta">
+              <div className="learn-more-button-container">
+                <Button
+                  className="learn-more-button"
+                  type="primary"
+                  outlinePadding="none"
+                  icon={<ArrowTopRightIcon width={11} height={11} />}
+                >
+                  ĐĂNG KÝ
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="customer-stories-content-container">
+            <div className="question-list">
+              {questions.map((question, index) => (
+                <div className="question-item" key={index}>
+                  <p>{question}</p>
+                </div>
+              ))}
+            </div>
+            <NextDoubleArrowIcon />
           </div>
         </section>
       </div>

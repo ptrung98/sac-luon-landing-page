@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Button } from "./button";
+import { ArrowDownIcon } from "./icons/arrow-down";
+import { MessageIcon } from "./icons/message";
 
 export const Header = () => {
   return (
@@ -18,11 +20,21 @@ export const Header = () => {
         <a href="#">Về Sạc Luôn</a>
       </nav>
       <div className="actions">
-        <Button className="btn-lang" type="transparent" outlinePadding="small">
+        <Button
+          className="btn-lang"
+          type="transparent"
+          outlinePadding="small"
+          icon={<ArrowDownIcon />}
+        >
           VI
         </Button>
-        <Button type="primary" outlinePadding="small">
-          Liên hệ
+        <Button
+          className="btn-contact"
+          type="primary"
+          outlinePadding="small"
+          icon={<MessageIcon style={{ marginLeft: "0.4rem" }} />}
+        >
+          LIÊN HỆ
         </Button>
       </div>
     </header>

@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FacebookIcon } from "./icons/facebook";
+import { InstagramIcon } from "./icons/instagram";
+import { TiktokIcon } from "./icons/tiktok";
+import { YoutubeIcon } from "./icons/youtube";
 
 export default function Footer() {
   return (
@@ -33,10 +37,10 @@ export default function Footer() {
           <div className="footer-contact">
             <h4>Theo dõi chúng tôi tại:</h4>
             <div className="social-icons">
-              <FaFacebook />
-              <FaInstagram />
-              <FaTiktok />
-              <FaYoutube />
+              <FacebookIcon />
+              <InstagramIcon />
+              <TiktokIcon />
+              <YoutubeIcon />
             </div>
 
             <h4>Thông tin liên hệ</h4>

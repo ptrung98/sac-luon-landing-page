@@ -1,0 +1,23 @@
+import { JSX, SVGProps } from "react";
+
+export const ArrowDownIcon = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => {
+  return (
+    <svg
+      width="14"
+      height="8"
+      viewBox="0 0 14 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M0.5 0.5L6.65 6.65C6.69489 6.69783 6.74911 6.73595 6.80931 6.76201C6.8695 6.78807 6.9344 6.80152 7 6.80152C7.0656 6.80152 7.1305 6.78807 7.19069 6.76201C7.25089 6.73595 7.30511 6.69783 7.35 6.65L13.5 0.5"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

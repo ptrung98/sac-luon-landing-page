@@ -4,10 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  // backdrop-filter: blur(8px);
   background: transparent;
-  z-index: 1;
   width: 100%;
+  z-index: 10;
 
   .logo {
     font-weight: 700;
@@ -25,16 +24,19 @@
   .actions {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 
-    .btn-lang,
     .btn-contact {
-      color: #000;
-      border: none;
       border-radius: 25px;
+      padding: 0.4rem 1.25rem;
+      font-size: 1.25rem;
+    }
+
+    .btn-lang {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #fff;
       padding: 0.2rem 1rem;
-      cursor: pointer;
-      font-weight: 600;
     }
   }
 }
