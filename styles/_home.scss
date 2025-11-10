@@ -416,3 +416,61 @@ body {
     }
   }
 }
+
+.core-values {
+  .core-values-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    .core-values-title-container {
+      flex: 1.5;
+      .core-values-subtitle {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 8px;
+        width: fit-content;
+        text-transform: uppercase;
+      }
+
+      .core-values-title {
+        font-size: 4rem;
+        font-weight: 800;
+        color: #222;
+      }
+    }
+
+    .core-values-title-cta {
+      flex: 1;
+      color: #262138;
+      align-self: flex-end;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      ul {
+        list-style: none;
+      }
+    }
+  }
+
+  .core-values-content-container {
+    background: url("/home/core-values.png") center/cover no-repeat;
+    width: 100%;
+    aspect-ratio: 10/ 3;
+    position: relative;
+    margin-top: 2rem;
+
+    .learn-more-button-container{
+      position: absolute;
+      bottom: 0rem;
+      right: 0rem;
+      padding: 1.5rem 0 0 1.5rem;
+      border-radius: 2rem 0 0 0;
+      background: #ffffff;
+
+      .learn-more-button{
+        font-size: 3rem;
+      }
+    }
+  }
+}

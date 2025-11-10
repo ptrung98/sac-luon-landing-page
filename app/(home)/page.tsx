@@ -285,6 +285,46 @@ const Home = () => {
             ))}
           </div>
         </section>
+
+        <section className="core-values">
+          <div className="core-values-header">
+            <div className="core-values-title-container">
+              <h3 className="core-values-subtitle text-hightlight-half">
+                GIÁ TRỊ CỐT LÕI
+              </h3>
+              <h1 className="core-values-title">
+                Năng lượng
+                <br />
+                <span className="text-hightlight-half">kết nối mọi người.</span>
+              </h1>
+            </div>
+            <div className="core-values-title-cta">
+              <ul>
+                <li>
+                  • Chúng tôi tin rằng pin không chỉ là nguồn năng lượng, mà còn
+                  là cầu nối giúp con người duy trì kết nối với thế giới.
+                </li>
+                <li>
+                  • Sạc Luôn hướng tới việc tạo nên một hệ sinh thái năng lượng
+                  thông minh, thân thiện và bền vững – để mỗi khoảnh khắc của
+                  bạn luôn tràn đầy năng lượng.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="core-values-content-container">
+            <div className="learn-more-button-container">
+              <Button
+                className="learn-more-button"
+                type="primary"
+                outlinePadding="none"
+                icon={<ArrowTopRightIcon />}
+              >
+                TÌM HIỂU THÊM
+              </Button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
