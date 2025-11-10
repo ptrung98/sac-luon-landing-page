@@ -1,4 +1,7 @@
 import { Button } from "../components/button";
+import { ArrowRightIcon } from "../components/icons/arrow-right";
+import { ArrowRightCircleIcon } from "../components/icons/arrow-right-circle";
+import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
 
 const Home = () => {
   return (
@@ -15,8 +18,12 @@ const Home = () => {
             Tiện Lợi Cho Mọi Lúc, Mọi Nơi!
           </p>
           <div className="hero-content-cta">
-            <Button type="primary" outlinePadding="medium">
-              TÌM CHỖ SẠC NGAY →
+            <Button
+              type="primary"
+              outlinePadding="medium"
+              icon={<ArrowTopRightIcon />}
+            >
+              TÌM CHỖ SẠC NGAY
             </Button>
             <div className="stats">
               <div>
@@ -36,7 +43,9 @@ const Home = () => {
               <p>
                 CẦN HƯỚNG <br /> DẪN SỬ DỤNG?
               </p>
-              <button className="btn-tutorial">TÌM HIỂU NGAY →</button>
+              <button className="btn-tutorial">
+                <span>TÌM HIỂU NGAY</span> <ArrowRightCircleIcon />
+              </button>
             </div>
           </div>
         </div>
@@ -51,8 +60,12 @@ const Home = () => {
                 <div className="item">Tìm điểm sạc</div>
                 <div className="item">Hình thức thanh toán</div>
               </div>
-              <Button type="secondary" outlinePadding="medium">
-                Tìm hiểu thêm →
+              <Button
+                type="secondary"
+                outlinePadding="medium"
+                icon={<ArrowTopRightIcon />}
+              >
+                Tìm hiểu thêm
               </Button>
             </div>
           </div>
@@ -86,6 +99,145 @@ const Home = () => {
           </div>
         </section>
       </section>
+
+      <div className="section-container">
+        <section className="whychoose">
+          <div className="whychoose-container">
+            <div className="whychoose-left">
+              <h3 className="whychoose-subtitle">
+                TẠI SAO CHỌN{" "}
+                <span className="text-hightlight-half">SẠC LUÔN?</span>
+              </h3>
+
+              <h1 className="whychoose-title text-hightlight-half">
+                TIỆN LỢI MỌI LÚC, MỌI NƠI
+              </h1>
+
+              <p className="whychoose-desc">
+                Sạc Luôn là mạng lưới cho thuê sạc dự phòng thông minh, ,<br />{" "}
+                giúp bạn luôn kết nối mà không gián đoạn.
+                <br />
+                Chỉ cần quét mã QR, lấy sạc, và trả lại ở bất kỳ đâu.
+              </p>
+            </div>
+
+            <div className="whychoose-right">
+              <ul>
+                <li>• Hơn 1 triệu người dùng tin tưởng</li>
+                <li>• Trạm sạc thông minh phủ rộng khắp Việt Nam</li>
+                <li>
+                  • Thanh toán linh hoạt qua ví điện tử hoặc thẻ ngân hàng
+                </li>
+                <li>• Hỗ trợ 24/7 qua hotline và app</li>
+              </ul>
+              <Button
+                type="primary"
+                outlinePadding="medium"
+                className="whychoose-button"
+                icon={<ArrowRightIcon />}
+              >
+                XEM NGAY
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        <section className="howtouse">
+          <div className="howtouse-header">
+            <h3 className="howtouse-subtitle text-hightlight-half">
+              QUY TRÌNH HOẠT ĐỘNG
+            </h3>
+            <h1 className="howtouse-title">CÁCH SỬ DỤNG DỄ DÀNG</h1>
+          </div>
+          <div className="howtouse-container">
+            <div className="howtouse-left"></div>
+
+            <div className="howtouse-right">
+              <div className="howtouse-steps">
+                <div className="step">
+                  <ArrowRightCircleIcon
+                    stroke="#262138"
+                    width={21}
+                    height={21}
+                  />
+                  <div className="step-content">
+                    <span>TÌM TRẠM SẠC GẦN NHẤT</span>
+                    <p>
+                      Mở ứng dụng Sạc Luôn hoặc quét mã QR để định vị trạm sạc
+                      quanh bạn.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="step">
+                  <ArrowRightCircleIcon
+                    stroke="#262138"
+                    width={21}
+                    height={21}
+                  />
+                  <div className="step-content">
+                    <span>QUÉT MÃ VÀ LẤY PIN</span>
+                    <p>
+                      Quét mã QR trên trạm, pin tự động bật ra – sẵn sàng sử
+                      dụng ngay.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="step">
+                  <ArrowRightCircleIcon
+                    stroke="#262138"
+                    width={21}
+                    height={21}
+                  />
+                  <div className="step-content">
+                    <span>SẠC THOẢI MÁI, TRẢ LINH HOẠT</span>
+                    <p>
+                      Trả pin tại bất kỳ trạm nào trong hệ thống. Hệ thống tự
+                      ghi nhận và thanh toán tự động.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="howtouse-button-container">
+                <Button
+                  type="primary"
+                  outlinePadding="none"
+                  icon={<ArrowTopRightIcon />}
+                >
+                  KHÁM PHÁ TRẠM GẦN BẠN
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="outstanding-features">
+          <div className="outstanding-features-header">
+            <h3 className="outstanding-features-subtitle text-hightlight-half">
+              Tính năng nổi bật
+            </h3>
+            <div className="outstanding-features-title-container">
+              <h1 className="outstanding-features-title">
+                Công nghệ tiên tiến <br />
+                Tiện ích vượt trội
+              </h1>
+              <div className="outstanding-features-title-cta">
+                <span>TẠI SAO SẠCLUÔN VƯỢT TRỘI?</span>
+                <Button
+                  type="primary"
+                  outlinePadding="medium"
+                  icon={<ArrowTopRightIcon width={12} height={12} />}
+                >
+                  TÌM HIỂU THÊM
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="outstanding-features-container"></div>
+        </section>
+      </div>
     </main>
   );
 };

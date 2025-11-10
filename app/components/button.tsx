@@ -1,9 +1,12 @@
+import { ReactNode } from "react";
+
 type ButtonProps = {
   type: "primary" | "secondary" | "transparent";
   outline?: boolean;
-  outlinePadding?: "small" | "medium" | "large";
+  outlinePadding?: "small" | "medium" | "large" | "none";
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
+  icon?: ReactNode;
 };
 
 export const Button = (props: ButtonProps) => {
@@ -14,9 +17,11 @@ export const Button = (props: ButtonProps) => {
       }`}
     >
       <button
-        className={`btn btn-${props.type} ${props.outline ? "btn-outline" : ""} ${props.className}`}
+        className={`btn btn-${props.type} ${
+          props.outline ? "btn-outline" : ""
+        } ${props.className}`}
       >
-        {props.children}
+        {props.children} {props.icon}
       </button>
     </div>
   );

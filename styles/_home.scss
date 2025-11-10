@@ -8,20 +8,20 @@
 
 body {
   font-family: "Urbanist", sans-serif;
-  background: linear-gradient(180deg, #001f40, #0a2d5e 40%, #fff 100%);
+  // background: linear-gradient(180deg, #001f40, #0a2d5e 40%, #fff 100%);
+  background: rgba(246, 242, 251, 1);
   color: white;
 }
 
-
-
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12rem 0;
-  flex-wrap: wrap;
+  position: relative;
   .hero-content {
-    // max-width: 1000px;
+    width: 100%;
+    padding: 12rem 0 22rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
 
     h1 {
@@ -71,6 +71,9 @@ body {
           font-size: 1.25rem;
           border: none;
           cursor: pointer;
+          span {
+            margin-right: 1rem;
+          }
         }
       }
     }
@@ -103,6 +106,7 @@ body {
   gap: 1rem;
   position: absolute;
   bottom: 0;
+  width: 100%;
   transform: translateY(50%);
 
   .feature-card {
@@ -179,6 +183,185 @@ body {
         font-style: Medium;
         font-size: 2rem;
         margin-top: 5rem;
+      }
+    }
+  }
+}
+
+.section-container {
+  padding: 0 14rem;
+}
+
+.whychoose {
+  padding: 60px 0;
+  margin-top: 20rem;
+
+  .whychoose-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .whychoose-left {
+    min-width: 300px;
+  }
+
+  .whychoose-right {
+    min-width: 280px;
+    background: #ffffffd9;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .whychoose-subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #222;
+  }
+
+  .whychoose-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+
+  .whychoose-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .whychoose-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+      font-size: 15px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+  }
+}
+
+.howtouse {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+
+  .howtouse-header {
+    .howtouse-subtitle {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+
+    .howtouse-title {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 32px;
+      color: #222;
+    }
+  }
+
+  .howtouse-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+
+    .howtouse-left {
+      width: 25.5rem;
+      aspect-ratio: 1 / 1;
+      border-radius: 1rem;
+      background: url("/home/feature-2.png") center/cover no-repeat;
+    }
+
+    .howtouse-right {
+      min-width: 320px;
+      .howtouse-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .step {
+          display: flex;
+          align-items: flex-start;
+          align-items: center;
+          gap: 1rem;
+
+          .step-icon {
+            color: #222;
+            font-size: 18px;
+            line-height: 1;
+            margin-top: 2px;
+          }
+
+          .step-content {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+            span {
+              font-size: 16px;
+              font-weight: 700;
+              color: #222;
+              flex: 0 0 30%;
+            }
+
+            p {
+              flex: 1;
+              font-size: 14px;
+              color: #555;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .howtouse-button-container {
+    margin-top: 2.5rem;
+  }
+}
+
+.outstanding-features {
+  padding: 80px 0;
+
+  .outstanding-features-header {
+    .outstanding-features-subtitle {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 8px;
+      width: fit-content;
+      text-transform: uppercase;
+    }
+
+    .outstanding-features-title-container{
+      display: flex;
+      justify-content: space-between;
+
+      span{
+        color: #262138; 
+      }
+
+      .outstanding-features-title {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 32px;
+        color: #222;
+        text-transform: uppercase;
+      }
+
+      .outstanding-features-title-cta{
+        margin-right: 2rem;
       }
     }
   }

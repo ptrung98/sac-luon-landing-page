@@ -16,6 +16,9 @@
     &-large {
       padding: 8px;
     }
+    &-none {
+      padding: 0;
+    }
   }
   height: fit-content;
 }
@@ -23,6 +26,9 @@
 .btn {
   border: none;
   cursor: pointer;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .btn-primary {
