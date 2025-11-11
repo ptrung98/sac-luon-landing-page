@@ -7,7 +7,7 @@ export const YoutubeIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_287_67)">
+      <g clipPath="url(#clip0_287_67)">
         <path
           d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
           fill="url(#paint0_linear_287_67)"
@@ -26,8 +26,8 @@ export const YoutubeIcon = () => {
           y2="34.1418"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#9B0000" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#9B0000" />
         </linearGradient>
         <clipPath id="clip0_287_67">
           <rect width="40" height="40" fill="white" />

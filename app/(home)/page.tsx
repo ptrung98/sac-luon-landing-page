@@ -4,6 +4,7 @@ import { ArrowRightCircleIcon } from "../components/icons/arrow-right-circle";
 import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
 import Image from "next/image";
 import { NextDoubleArrowIcon } from "../components/icons/next-double-arrow";
+import { MaskBorder } from "../components/mask-border";
 
 const Home = () => {
   const outstandingFeatureItems = [
@@ -340,20 +341,28 @@ const Home = () => {
           </div>
           <div className="core-values-content-container">
             <div className="learn-more-button-container">
-              <Button
-                className="learn-more-button"
-                type="primary"
-                outlinePadding="none"
-                icon={
-                  <ArrowTopRightIcon
-                    width={19}
-                    height={19}
-                    style={{ marginLeft: "1rem" }}
-                  />
-                }
-              >
-                <i>TÌM HIỂU THÊM</i>
-              </Button>
+              <div className="content-container">
+                <div className="mask-border-1-container">
+                  <MaskBorder size="medium" position="bottom-right" />
+                </div>
+                <div className="mask-border-2-container">
+                  <MaskBorder size="medium" position="bottom-right" />
+                </div>
+                <Button
+                  className="learn-more-button"
+                  type="primary"
+                  outlinePadding="none"
+                  icon={
+                    <ArrowTopRightIcon
+                      width={19}
+                      height={19}
+                      style={{ marginLeft: "1rem" }}
+                    />
+                  }
+                >
+                  <i>TÌM HIỂU THÊM</i>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -372,14 +381,22 @@ const Home = () => {
             </div>
             <div className="customer-stories-title-cta">
               <div className="learn-more-button-container">
-                <Button
-                  className="learn-more-button"
-                  type="primary"
-                  outlinePadding="none"
-                  icon={<ArrowTopRightIcon width={11} height={11} />}
-                >
-                  ĐĂNG KÝ
-                </Button>
+                <div className="content-container">
+                  <div className="mask-border-1-container">
+                    <MaskBorder size="small" position="bottom-left" />
+                  </div>
+                  <div className="mask-border-2-container">
+                    <MaskBorder size="small" position="bottom-left" />
+                  </div>
+                  <Button
+                    className="learn-more-button"
+                    type="primary"
+                    outlinePadding="none"
+                    icon={<ArrowTopRightIcon width={11} height={11} />}
+                  >
+                    ĐĂNG KÝ
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

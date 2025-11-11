@@ -12,7 +12,7 @@ export const InstagramIcon = (
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_287_50)">
+      <g clipPath="url(#clip0_287_50)">
         <path
           d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
           fill="url(#paint0_linear_287_50)"
@@ -39,12 +39,12 @@ export const InstagramIcon = (
           y2="34.1418"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE185" />
-          <stop offset="0.21" stop-color="#FFBB36" />
-          <stop offset="0.38" stop-color="#FF5176" />
-          <stop offset="0.52" stop-color="#F63395" />
-          <stop offset="0.74" stop-color="#A436D2" />
-          <stop offset="1" stop-color="#5F4EED" />
+          <stop stopColor="#FFE185" />
+          <stop offset="0.21" stopColor="#FFBB36" />
+          <stop offset="0.38" stopColor="#FF5176" />
+          <stop offset="0.52" stopColor="#F63395" />
+          <stop offset="0.74" stopColor="#A436D2" />
+          <stop offset="1" stopColor="#5F4EED" />
         </linearGradient>
         <clipPath id="clip0_287_50">
           <rect width="40" height="40" fill="white" />

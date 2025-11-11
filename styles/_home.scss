@@ -483,6 +483,20 @@ body {
         font-size: 3rem;
         padding: 1rem 2rem;
       }
+
+      .content-container {
+        position: relative;
+        .mask-border-1-container {
+          position: absolute;
+          bottom: 0;
+          left: -3.75rem;
+        }
+        .mask-border-2-container {
+          position: absolute;
+          top: -3.75rem;
+          right: 0;
+        }
+      }
     }
   }
 }
@@ -531,6 +545,20 @@ body {
         .learn-more-button {
           font-size: 1.25rem;
         }
+
+        .content-container {
+          position: relative;
+          .mask-border-1-container {
+            position: absolute;
+            bottom: -1rem;
+            right: -3rem;
+          }
+          .mask-border-2-container {
+            position: absolute;
+            top: -2rem;
+            left: 0;
+          }
+        }
       }
     }
   }
@@ -541,6 +569,7 @@ body {
     margin-top: 2rem;
     justify-content: space-between;
     padding: 0 2rem;
+    gap: 2rem;
     .question-list {
       display: flex;
       gap: 1rem;

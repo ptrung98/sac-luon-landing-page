@@ -12,7 +12,7 @@ export const FacebookIcon = (
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_287_46)">
+      <g clipPath="url(#clip0_287_46)">
         <path
           d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
           fill="url(#paint0_linear_287_46)"
@@ -31,11 +31,11 @@ export const FacebookIcon = (
           y2="34.1418"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1677F1" />
-          <stop offset="0.18" stop-color="#176EE9" />
-          <stop offset="0.46" stop-color="#1D55D3" />
-          <stop offset="0.82" stop-color="#252EB0" />
-          <stop offset="1" stop-color="#2B189C" />
+          <stop stopColor="#1677F1" />
+          <stop offset="0.18" stopColor="#176EE9" />
+          <stop offset="0.46" stopColor="#1D55D3" />
+          <stop offset="0.82" stopColor="#252EB0" />
+          <stop offset="1" stopColor="#2B189C" />
         </linearGradient>
         <clipPath id="clip0_287_46">
           <rect width="40" height="40" fill="white" />
