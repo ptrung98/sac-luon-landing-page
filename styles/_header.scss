@@ -8,6 +8,13 @@
   width: 100%;
   z-index: 10;
 
+  background: linear-gradient(
+    180deg,
+    #0c0022 0%,
+    rgba(18, 7, 59, 0.5) 93.07%,
+    rgba(255, 222, 21, 0) 96.49%
+  );
+
   .logo {
     font-weight: 700;
     font-size: 1.2rem;
@@ -15,10 +22,22 @@
   }
 
   .nav a {
-    margin: 0 2rem;
+    padding: 0 2rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    position: relative;
+
+    &.active::after {
+      content: "";
+      position: absolute;
+      top: -0.2rem;
+      right: 1.5rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      background-color: #fdd835;
+      border-radius: 50%;
+    }
   }
 
   .actions {

@@ -33,7 +33,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social + Contact */}
           <div className="footer-contact">
             <h4>Theo dõi chúng tôi tại:</h4>
             <div className="social-icons">
