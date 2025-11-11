@@ -5,6 +5,8 @@ import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
 import Image from "next/image";
 import { NextDoubleArrowIcon } from "../components/icons/next-double-arrow";
 import { MaskBorder } from "../components/mask-border";
+import { CommentCard } from "../components/comment-card";
+import { LearnMoretIcon } from "../components/icons/learn-more";
 
 const Home = () => {
   const outstandingFeatureItems = [
@@ -28,6 +30,25 @@ const Home = () => {
       title: "Bảo mật & an toàn",
       description: "theo dõi giao dịch minh bạch, pin được kiểm định định kỳ.",
       backgroundImage: "/home/outstanding-feature-4.png",
+    },
+  ];
+
+  const commentsData = [
+    {
+      avatar: "/home/comment-card-avatar-default.png",
+      comment:
+        "“Từ ngày sử dụng dịch vụ của SạcLuôn mình đã không còn phải lo lắng về việc mang theo dây sạc hay phải lo việc hết pin thường xuyên nữa. “",
+      image: "/home/comment-card-image-default.png",
+      name: "ĐẶNG MINH ĐỨC",
+      startNumber: 4,
+    },
+    {
+      avatar: "/home/comment-card-avatar-default.png",
+      comment:
+        "“Từ ngày sử dụng dịch vụ của SạcLuôn mình đã không còn phải lo lắng về việc mang theo dây sạc hay phải lo việc hết pin thường xuyên nữa. “",
+      image: "/home/comment-card-image-default.png",
+      name: "ĐẶNG MINH ĐỨC",
+      startNumber: 5,
     },
   ];
 
@@ -400,15 +421,31 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="customer-stories-content-container">
-            <div className="question-list">
-              {questions.map((question, index) => (
-                <div className="question-item" key={index}>
-                  <p>{question}</p>
-                </div>
+            <div className="comments-container">
+              {commentsData.map((data, index) => (
+                <CommentCard key={index} data={data} />
               ))}
+              <div className="comment-learn-more">
+                <div className="overlay">
+                  <div className="learn-more-text">
+                    ĐỌC <br /> THÊM
+                  </div>
+                  <LearnMoretIcon className="learn-more-icon"/>
+                </div>
+              </div>
             </div>
-            <NextDoubleArrowIcon />
+            <div className="question-list-container">
+              <div className="question-list">
+                {questions.map((question, index) => (
+                  <div className="question-item" key={index}>
+                    <p>{question}</p>
+                  </div>
+                ))}
+              </div>
+              <NextDoubleArrowIcon />
+            </div>
           </div>
         </section>
       </div>

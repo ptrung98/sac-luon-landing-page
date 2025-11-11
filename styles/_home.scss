@@ -1,16 +1,7 @@
-// @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Urbanist", sans-serif;
-  // background: linear-gradient(180deg, #001f40, #0a2d5e 40%, #fff 100%);
-  background: rgba(246, 242, 251, 1);
-  color: white;
 }
 
 .hero {
@@ -108,10 +99,12 @@ body {
   bottom: 0;
   width: 100%;
   transform: translateY(50%);
+  color: #ffffff;
 
   .feature-card {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-family: "Montserrat", sans-serif;
+    width: 25rem;
 
     .overlay {
       background: rgba(12, 0, 34, 0.7);
@@ -122,12 +115,14 @@ body {
 
     h4 {
       font-size: 2rem;
-      color: #ffffff;
     }
 
     &.card-1 {
+      display: flex;
+      flex-direction: column;
       position: relative;
       background: url("/home/feature-1.png") center/cover no-repeat;
+      aspect-ratio: 1 / 1;
 
       .content {
         display: flex;
@@ -147,6 +142,7 @@ body {
       height: 31.75rem;
       position: relative;
       background: url("/home/feature-2.png") center/cover no-repeat;
+      aspect-ratio: 1 / 1.5;
 
       .content {
         display: flex;
@@ -165,9 +161,13 @@ body {
     }
 
     &.card-3 {
+      display: flex;
+      flex-direction: column;
       position: relative;
       background: url("/home/feature-3.png") center/cover no-repeat;
       text-transform: uppercase;
+      aspect-ratio: 1 / 1;
+
       .text-1 {
         font-size: 3rem;
         font-weight: 500;
@@ -477,7 +477,7 @@ body {
       right: 0rem;
       padding: 1.25rem 0 0 1.25rem;
       border-radius: 2rem 0 0 0;
-      background: #ffffff;
+      background: var(--background);
 
       .learn-more-button {
         font-size: 3rem;
@@ -540,7 +540,7 @@ body {
         left: 0rem;
         padding: 1rem 2rem 1rem 0;
         border-radius: 0 1rem 0 0;
-        background: #ffffff;
+        background: var(--background);
 
         .learn-more-button {
           font-size: 1.25rem;
@@ -564,21 +564,59 @@ body {
   }
 
   .customer-stories-content-container {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    justify-content: space-between;
-    padding: 0 2rem;
-    gap: 2rem;
-    .question-list {
+    .comments-container {
       display: flex;
       gap: 1rem;
-      .question-item {
-        border-radius: 5rem;
-        background-color: #ffffff;
-        font-size: 20px;
-        color: #4a4363;
-        padding: 0.5rem 1rem;
+      margin-top: 2rem;
+
+      .comment-learn-more {
+        width: 25rem;
+        height: auto;
+        background: url("/home/comment-learn-more.png") center/cover no-repeat;
+        border-radius: 1.25rem;
+        text-align: end;
+        position: relative;
+        cursor: pointer;
+
+        .overlay {
+          background: #ffde15b8;
+          padding: 2rem;
+          border-radius: 1.25rem;
+          height: 100%;
+        }
+
+        .learn-more-text {
+          position: absolute;
+          bottom: 1rem;
+          text-align: start;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        .learn-more-icon {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+        }
+      }
+    }
+
+    .question-list-container {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      justify-content: space-between;
+      padding: 0 2rem;
+      gap: 2rem;
+      .question-list {
+        display: flex;
+        gap: 1rem;
+        .question-item {
+          border-radius: 5rem;
+          background-color: #ffffff;
+          font-size: 20px;
+          color: #4a4363;
+          padding: 0.5rem 1rem;
+        }
       }
     }
   }

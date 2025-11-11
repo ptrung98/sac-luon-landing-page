@@ -1,13 +1,17 @@
 .mask-border-box {
   position: relative;
   overflow: visible;
-  background: #ffffff;
+  background: var(--background);
   &.small {
     width: 1rem;
     height: 1rem;
 
     &.bottom-left {
-      mask: radial-gradient(circle at top right, transparent 0.96rem, black 1rem);
+      mask: radial-gradient(
+        circle at top right,
+        transparent 0.96rem,
+        black 1rem
+      );
     }
   }
 
@@ -16,12 +20,93 @@
     height: 2.5rem;
 
     &.bottom-right {
-      mask: radial-gradient(circle at top left, transparent 2.46rem, black 2.5rem);
+      mask: radial-gradient(
+        circle at top left,
+        transparent 2.46rem,
+        black 2.5rem
+      );
     }
   }
 
   &.large {
     width: 6rem;
     height: 6rem;
+  }
+}
+
+.testimonial-card {
+  max-width: 96rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 1.25rem;
+  border: 1px solid #ffde15;
+
+  .testimonial-content-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .testimonial-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .reviewer-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        .reviewer-avatar {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 1rem;
+        }
+
+        .reviewer-name {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: #1f2937;
+        }
+
+        .reviewer-rating {
+          display: flex;
+          color: #facc15;
+          margin-top: 0.125rem;
+          .star {
+            font-size: 1.5rem;
+          }
+        }
+
+        .reviewer-comment {
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: #374151;
+          line-height: 1.625;
+          font-style: italic;
+          border-left: 4px solid #facc15;
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .reviewer-image-box {
+      width: 10rem;
+      height: 12rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      background-color: #f7f7f7;
+
+      .reviewer-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 }
