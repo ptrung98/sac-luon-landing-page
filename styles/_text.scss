@@ -12,3 +12,11 @@
     z-index: -1;
   }
 }
+
+.text-list-bullet-point li::before {
+  content: "• ";
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
