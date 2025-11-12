@@ -10,6 +10,83 @@
             "tutorial_prompt_line1": "CẦN HƯỚNG",
             "tutorial_prompt_line2": "DẪN SỬ DỤNG?",
             "tutorial_cta": "TÌM HIỂU NGAY"
+        },
+        "features": {
+            "card1_title_line1": "Tiện Lợi",
+            "card1_title_line2": "Mọi Lúc, Mọi Nơi",
+            "card1_item1": "Tìm điểm sạc",
+            "card1_item2": "Hình thức thanh toán",
+            "card1_button": "Tìm hiểu thêm",
+            "card2_title_line1": "PIN ĐỎ",
+            "card2_title_line2": "SẠC LUÔN LO",
+            "card2_text1": "Không cần mang theo sạc dự phòng cá nhân.",
+            "card2_text2_line1": "Chúng tôi luôn sẵn sàng hỗ trợ bạn ở mọi nơi –",
+            "card2_text2_line2": "từ quán cà phê đến trung tâm thương mại.",
+            "card3_stat": "99,7%",
+            "card3_stat_desc": "thiết bị luôn sẵn sàng",
+            "card3_title_line1": "sạc nhanh",
+            "card3_title_line2": "đủ loại cáp",
+            "card3_title_line3": "tương thích với",
+            "card3_title_line4": "mọi thiết bị."
+        },
+        "why_choose": {
+            "subtitle_part1": "TẠI SAO CHỌN",
+            "subtitle_part2": "SẠC LUÔN?",
+            "title": "TIỆN LỢI MỌI LÚC, MỌI NƠI",
+            "description_line1": "Sạc Luôn là mạng lưới cho thuê sạc dự phòng thông minh,",
+            "description_line2": "giúp bạn luôn kết nối mà không gián đoạn.",
+            "description_line3": "Chỉ cần quét mã QR, lấy sạc, và trả lại ở bất kỳ đâu.",
+            "feature1": "Hơn 1 triệu người dùng tin tưởng",
+            "feature2": "Trạm sạc thông minh phủ rộng khắp Việt Nam",
+            "feature3": "Thanh toán linh hoạt qua ví điện tử hoặc thẻ ngân hàng",
+            "feature4": "Hỗ trợ 24/7 qua hotline và app",
+            "button_text": "XEM NGAY"
+        },
+        "how_to_use": {
+            "subtitle": "QUY TRÌNH HOẠT ĐỘNG",
+            "title": "CÁCH SỬ DỤNG DỄ DÀNG",
+            "step1_title": "TÌM TRẠM SẠC GẦN NHẤT",
+            "step1_desc": "Mở ứng dụng Sạc Luôn hoặc quét mã QR để định vị trạm sạc quanh bạn.",
+            "step2_title": "QUÉT MÃ VÀ LẤY PIN",
+            "step2_desc": "Quét mã QR trên trạm, pin tự động bật ra – sẵn sàng sử dụng ngay.",
+            "step3_title": "SẠC THOẢI MÁI, TRẢ LINH HOẠT",
+            "step3_desc_line1": "Trả pin tại bất kỳ trạm nào trong hệ thống.",
+            "step3_desc_line2": "Hệ thống tự ghi nhận và thanh toán tự động.",
+            "button_text": "KHÁM PHÁ TRẠM GẦN BẠN"
+        },
+        "outstanding_features": {
+            "subtitle": "Tính năng nổi bật",
+            "title_line1": "Công nghệ tiên tiến",
+            "title_line2": "Tiện ích vượt trội",
+            "cta_text_part1": "TẠI SAO",
+            "cta_highlight": "SẠC LUÔN",
+            "cta_text_part2": "VƯỢT TRỘI?",
+            "button_text": "TÌM HIỂU THÊM",
+            "feature1_title": "Sạc nhanh PD/QC 3.0",
+            "feature1_desc": "đầy pin nhanh chóng chỉ trong 30 phút.",
+            "feature2_title": "Đa DẠNG CỔNG SẠC",
+            "feature2_desc": "tương thích tất cả các dòng sạc iPhone, Android, Type-C ....",
+            "feature3_title": "Trả pin linh hoạt",
+            "feature3_desc": "nhận và trả pin ở bất kỳ trạm nào trong hệ thống.",
+            "feature4_title": "Bảo mật & an toàn",
+            "feature4_desc": "theo dõi giao dịch minh bạch, pin được kiểm định định kỳ."
+        },
+        "core_values": {
+            "subtitle": "GIÁ TRỊ CỐT LÕI",
+            "title_line1": "Năng lượng",
+            "title_line2": "kết nối mọi người.",
+            "value_point1": "Chúng tôi tin rằng pin không chỉ là nguồn năng lượng, mà còn là cầu nối giúp con người duy trì kết nối với thế giới.",
+            "value_point2_line1": "Sạc Luôn hướng tới việc tạo nên một hệ sinh thái năng lượng thông minh, thân thiện và bền vững –",
+            "value_point2_line2": "để mỗi khoảnh khắc của bạn luôn tràn đầy năng lượng.",
+            "button_text": "TÌM HIỂU THÊM"
+        },
+        "customer_stories": {
+            "subtitle": "Câu chuyện khách hàng",
+            "title_line1": "Hàng triệu người",
+            "title_line2": "dùng tin tưởng.",
+            "button_text": "ĐĂNG KÝ",
+            "read_more_line1": "ĐỌC",
+            "read_more_line2": "THÊM"
         }
     }
 }

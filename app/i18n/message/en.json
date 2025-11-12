@@ -10,6 +10,83 @@
             "tutorial_prompt_line1": "NEED A",
             "tutorial_prompt_line2": "TUTORIAL?",
             "tutorial_cta": "LEARN MORE"
+        },
+        "features": {
+            "card1_title_line1": "Convenient",
+            "card1_title_line2": "Anytime, Anywhere",
+            "card1_item1": "Find a charging spot",
+            "card1_item2": "Payment methods",
+            "card1_button": "Learn more",
+            "card2_title_line1": "RED BATTERY?",
+            "card2_title_line2": "SAC LUON HANDLES IT",
+            "card2_text1": "No need to carry your own power bank.",
+            "card2_text2_line1": "We are always ready to support you everywhere –",
+            "card2_text2_line2": "from coffee shops to shopping malls.",
+            "card3_stat": "99.7%",
+            "card3_stat_desc": "of devices are always ready",
+            "card3_title_line1": "fast charging",
+            "card3_title_line2": "all cable types",
+            "card3_title_line3": "compatible with",
+            "card3_title_line4": "all devices."
+        },
+        "why_choose": {
+            "subtitle_part1": "WHY CHOOSE",
+            "subtitle_part2": "SAC LUON?",
+            "title": "CONVENIENT ANYTIME, ANYWHERE",
+            "description_line1": "Sac Luon is a smart power bank rental network,",
+            "description_line2": "helping you stay connected without interruption.",
+            "description_line3": "Just scan the QR code, take the charger, and return it anywhere.",
+            "feature1": "Trusted by over 1 million users",
+            "feature2": "Smart charging stations widely covered across Vietnam",
+            "feature3": "Flexible payment via e-wallets or bank cards",
+            "feature4": "24/7 support via hotline and app",
+            "button_text": "VIEW NOW"
+        },
+        "how_to_use": {
+            "subtitle": "OPERATING PROCESS",
+            "title": "EASY TO USE",
+            "step1_title": "FIND THE NEAREST STATION",
+            "step1_desc": "Open the Sac Luon app or scan the QR code to locate charging stations around you.",
+            "step2_title": "SCAN AND GET THE POWER BANK",
+            "step2_desc": "Scan the QR code on the station, and the power bank automatically pops out – ready to use immediately.",
+            "step3_title": "CHARGE FREELY, RETURN FLEXIBLY",
+            "step3_desc_line1": "Return the power bank at any station in the system.",
+            "step3_desc_line2": "The system automatically records the return and processes payment.",
+            "button_text": "EXPLORE STATIONS NEAR YOU"
+        },
+        "outstanding_features": {
+            "subtitle": "Outstanding Features",
+            "title_line1": "Advanced Technology",
+            "title_line2": "Superior Utility",
+            "cta_text_part1": "WHY IS",
+            "cta_highlight": "SAC LUON",
+            "cta_text_part2": "SUPERIOR?",
+            "button_text": "LEARN MORE",
+            "feature1_title": "Fast Charging PD/QC 3.0",
+            "feature1_desc": "quick battery charge in just 30 minutes.",
+            "feature2_title": "DIVERSE CHARGING PORTS",
+            "feature2_desc": "compatible with all charging standards: iPhone, Android, Type-C, etc.",
+            "feature3_title": "Flexible Power Bank Return",
+            "feature3_desc": "pick up and return the power bank at any station in the system.",
+            "feature4_title": "Security & Safety",
+            "feature4_desc": "transparent transaction tracking, power banks undergo regular inspection."
+        },
+        "core_values": {
+            "subtitle": "CORE VALUES",
+            "title_line1": "Energy that",
+            "title_line2": "connects everyone.",
+            "value_point1": "We believe that the power bank is not just an energy source, but also a bridge that helps people stay connected to the world.",
+            "value_point2_line1": "Sac Luon aims to create a smart, friendly, and sustainable energy ecosystem –",
+            "value_point2_line2": "so that every moment of yours is always powered up.",
+            "button_text": "LEARN MORE"
+        },
+        "customer_stories": {
+            "subtitle": "Customer Stories",
+            "title_line1": "Millions of users",
+            "title_line2": "trust us.",
+            "button_text": "SIGN UP",
+            "read_more_line1": "READ",
+            "read_more_line2": "MORE"
         }
     }
 }
