@@ -1,0 +1,15 @@
+{
+    "HomePage": {
+        "hero_section": {
+            "hero_title": "SẠC LUÔN",
+            "hero_subtitle_line1": "Dịch Vụ Cho Thuê Sạc Dự Phòng",
+            "hero_subtitle_line2": "Tiện Lợi Cho Mọi Lúc, Mọi Nơi!",
+            "cta_main": "TÌM CHỖ SẠC NGAY",
+            "stat_locations": "Điểm sạc toàn quốc",
+            "stat_users": "Khách hàng sử dụng hàng tháng",
+            "tutorial_prompt_line1": "CẦN HƯỚNG",
+            "tutorial_prompt_line2": "DẪN SỬ DỤNG?",
+            "tutorial_cta": "TÌM HIỂU NGAY"
+        }
+    }
+}

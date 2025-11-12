@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Button } from "./button";
 import { ArrowDownIcon } from "./icons/arrow-down";
 import { MessageIcon } from "./icons/message";
-import { usePathname } from "next/navigation";
-
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export const Header = () => {
   const menu = [
@@ -26,7 +26,17 @@ export const Header = () => {
     },
   ];
   const pathname = usePathname();
-  
+  const router = useRouter();
+  const currentLocale = useLocale();
+
+  const changeLanguage = () => {
+    console.log("change");
+    const segments = pathname.split("/");
+    segments[1] = currentLocale === "vi" ? "en" : "vi";
+    const newPath = segments.join("/");
+    router.push(newPath);
+  };
+
   return (
     <header className="header">
       <Image
@@ -53,6 +63,7 @@ export const Header = () => {
           type="transparent"
           outlinePadding="small"
           icon={<ArrowDownIcon />}
+          onClick={changeLanguage}
         >
           VI
         </Button>

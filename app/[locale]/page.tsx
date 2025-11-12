@@ -7,8 +7,11 @@ import { NextDoubleArrowIcon } from "../components/icons/next-double-arrow";
 import { MaskBorder } from "../components/mask-border";
 import { CommentCard } from "../components/comment-card";
 import { LearnMoretIcon } from "../components/icons/learn-more";
+import { getTranslations } from "next-intl/server";
 
-const Home = () => {
+const Home = async () => {
+  const t = await getTranslations("HomePage");
+
   const outstandingFeatureItems = [
     {
       title: "Sạc nhanh PD/QC 3.0",
@@ -65,12 +68,14 @@ const Home = () => {
           <div className="overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>SẠC LUÔN</h1>
+          <h1>{t("hero_section.hero_title")}</h1>
+
           <p>
-            Dịch Vụ Cho Thuê Sạc Dự Phòng
+            {t("hero_section.hero_subtitle_line1")}
             <br />
-            Tiện Lợi Cho Mọi Lúc, Mọi Nơi!
+            {t("hero_section.hero_subtitle_line2")}
           </p>
+
           <div className="hero-content-cta">
             <Button
               type="primary"
@@ -83,28 +88,33 @@ const Home = () => {
                 />
               }
             >
-              TÌM CHỖ SẠC NGAY
+              {t("hero_section.cta_main")}
             </Button>
             <div className="stats">
               <div>
                 <h3>50+</h3>
                 <p>
-                  Điểm sạc <br /> toàn quốc
+                  {t("hero_section.stat_locations").split("<br />")[0]}
+                  <br />
+                  {t("hero_section.stat_locations").split("<br />")[1]}
                 </p>
               </div>
               <div>
                 <h3>1M+</h3>
                 <p>
-                  Khách hàng sử dụng <br /> hàng tháng
+                  {t("hero_section.stat_users").split("<br />")[0]}
+                  <br />
+                  {t("hero_section.stat_users").split("<br />")[1]}
                 </p>
               </div>
             </div>
             <div className="tutorial">
               <p>
-                CẦN HƯỚNG <br /> DẪN SỬ DỤNG?
+                {t("hero_section.tutorial_prompt_line1")} <br />
+                {t("hero_section.tutorial_prompt_line2")}
               </p>
               <button className="btn-tutorial">
-                <span>TÌM HIỂU NGAY</span> <ArrowRightCircleIcon />
+                <span>{t("hero_section.tutorial_cta")}</span> <ArrowRightCircleIcon />
               </button>
             </div>
           </div>
@@ -432,7 +442,7 @@ const Home = () => {
                   <div className="learn-more-text">
                     ĐỌC <br /> THÊM
                   </div>
-                  <LearnMoretIcon className="learn-more-icon"/>
+                  <LearnMoretIcon className="learn-more-icon" />
                 </div>
               </div>
             </div>

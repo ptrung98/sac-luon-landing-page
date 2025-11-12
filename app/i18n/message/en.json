@@ -1,0 +1,15 @@
+{
+    "HomePage": {
+        "hero_section": {
+            "hero_title": "CHARGE NOW",
+            "hero_subtitle_line1": "Portable Power Bank Rental Service",
+            "hero_subtitle_line2": "Convenience Anytime, Anywhere!",
+            "cta_main": "FIND A CHARGING STATION NOW",
+            "stat_locations": "Charging stations nationwide",
+            "stat_users": "Monthly active users",
+            "tutorial_prompt_line1": "NEED A",
+            "tutorial_prompt_line2": "TUTORIAL?",
+            "tutorial_cta": "LEARN MORE"
+        }
+    }
+}
