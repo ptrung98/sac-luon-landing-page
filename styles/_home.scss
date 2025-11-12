@@ -7,22 +7,23 @@
 .hero {
   display: flex;
   position: relative;
+  justify-content: center;
   .hero-content {
-    width: 100%;
     padding: 12rem 0 22rem 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     z-index: 1;
 
     h1 {
       font-size: 6rem;
       font-weight: 700;
       color: #fff;
+      font-family: var(--font-DFVN-MBF-Space-Habitat);
     }
 
     p {
       margin-top: 1rem;
+      padding-left: 1rem;
       font-size: 1.5rem;
       color: #ddd;
       text-transform: uppercase;
@@ -32,6 +33,7 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      margin-top: 2rem;
 
       .stats {
         display: flex;
@@ -103,7 +105,6 @@
 
   .feature-card {
     border-radius: 1.25rem;
-    font-family: "Montserrat", sans-serif;
     width: 25rem;
 
     .overlay {
@@ -159,7 +160,7 @@
         justify-content: flex-end;
         height: 100%;
         .text-1 {
-          // font-family: DFVN MBF Space Habitat;
+          font-family: var(--font-DFVN-MBF-Space-Habitat);
           font-size: 32px;
         }
         .text-2,

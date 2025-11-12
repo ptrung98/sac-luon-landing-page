@@ -1,5 +1,3 @@
-
-
 @use "../styles/home" as *;
 @use "../styles/button" as *;
 @use "../styles/footer" as *;
@@ -8,12 +6,16 @@
 @use "../styles/other" as *;
 
 :root {
-  --background: #F6F2FB;
+  --background: #f6f2fb;
   --foreground: #171717;
+}
+
+html {
+  font-family: var(--font-montserrat), sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Urbanist, sans-serif;
 }

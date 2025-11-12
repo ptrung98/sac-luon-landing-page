@@ -68,7 +68,6 @@ const Home = async () => {
         </div>
         <div className="hero-content">
           <h1>{t("hero_section.hero_title")}</h1>
-
           <p>
             {t("hero_section.hero_subtitle_line1")}
             <br />

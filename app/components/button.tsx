@@ -5,24 +5,14 @@ type ButtonProps = {
   outlinePadding?: "small" | "medium" | "large" | "none";
   children: ReactNode;
   icon?: ReactNode;
-} & Omit<ComponentPropsWithoutRef<'button'>, 'type'>;
-
+} & Omit<ComponentPropsWithoutRef<"button">, "type">;
 
 export const Button = (props: ButtonProps) => {
-  const { 
-        type, 
-        outlinePadding,
-        className, 
-        children, 
-        icon, 
-        ...rest
-    } = props;
+  const { type, outlinePadding, className, children, icon, ...rest } = props;
 
   return (
     <div
-      className={`btn-container outline-padding-${
-        outlinePadding || "small"
-      }`}
+      className={`btn-container outline-padding-${outlinePadding || "small"}`}
     >
       <button
         className={`btn btn-${type}
@@ -34,4 +24,3 @@ export const Button = (props: ButtonProps) => {
     </div>
   );
 };
-

@@ -1,20 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./../globals.scss";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
 import { Header } from "../components/hearder";
 import Footer from "../components/footer";
 import { notFound } from "next/navigation";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const mBFSpaceHabitat = localFont({
+  src: [
+    {
+      path: "../../public/fonts/DFVNMBFSpaceHabitat/MBFSpaceHabitat.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/DFVNMBFSpaceHabitat/MBFSpaceHabitat.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-DFVN-MBF-Space-Habitat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -35,10 +48,8 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang={locale} className={`${montserrat.variable} ${mBFSpaceHabitat.variable} antialiased`}>
+      <body>
         <NextIntlClientProvider>
           <Header />
           {children}
