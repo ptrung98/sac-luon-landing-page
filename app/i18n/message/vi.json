@@ -5,8 +5,10 @@
             "hero_subtitle_line1": "Dịch Vụ Cho Thuê Sạc Dự Phòng",
             "hero_subtitle_line2": "Tiện Lợi Cho Mọi Lúc, Mọi Nơi!",
             "cta_main": "TÌM CHỖ SẠC NGAY",
-            "stat_locations": "Điểm sạc toàn quốc",
-            "stat_users": "Khách hàng sử dụng hàng tháng",
+            "stat_locations_line1": "Điểm sạc",
+            "stat_locations_line2": "toàn quốc",
+            "stat_users_line1": "Khách hàng sử dụng",
+            "stat_users_line2": "hàng tháng",
             "tutorial_prompt_line1": "CẦN HƯỚNG",
             "tutorial_prompt_line2": "DẪN SỬ DỤNG?",
             "tutorial_cta": "TÌM HIỂU NGAY"
@@ -94,5 +96,18 @@
         "products": "Sản phẩm",
         "charging_spots": "Điểm sạc",
         "about_us": "Về Sạc Luôn"
+    },
+    "Footer": {
+        "logo_alt": "Sạc Luôn",
+        "link_group_title": "Về Chúng tôi",
+        "link1_text": "Dịch vụ",
+        "link2_text": "Tìm điểm sạc",
+        "link3_text": "Liên hệ",
+        "link4_text": "Liên hệ kinh doanh",
+        "social_title": "Theo dõi chúng tôi tại:",
+        "contact_info_title": "Thông tin liên hệ",
+        "address_title": "Địa chỉ",
+        "address_line1": "Tầng 2 – số 5, ngõ 76 Trần Thái Tông,",
+        "address_line2": "P. Dịch Vọng Hậu, Q. Cầu Giấy, Hà Nội"
     }
 }

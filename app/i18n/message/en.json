@@ -5,8 +5,10 @@
             "hero_subtitle_line1": "Portable Power Bank Rental Service",
             "hero_subtitle_line2": "Convenience Anytime, Anywhere!",
             "cta_main": "FIND A CHARGING STATION NOW",
-            "stat_locations": "Charging stations nationwide",
-            "stat_users": "Monthly active users",
+            "stat_locations_line1": "Charging stations",
+            "stat_locations_line2": "nationwide",
+            "stat_users_line1": "Monthly active",
+            "stat_users_line2": "users",
             "tutorial_prompt_line1": "NEED A",
             "tutorial_prompt_line2": "TUTORIAL?",
             "tutorial_cta": "LEARN MORE"
@@ -94,5 +96,18 @@
         "products": "Products",
         "charging_spots": "Charging Spots",
         "about_us": "About Sac Luon"
+    },
+    "Footer": {
+        "logo_alt": "Sac Luon",
+        "link_group_title": "About Us",
+        "link1_text": "Services",
+        "link2_text": "Find Charging Spots",
+        "link3_text": "Contact Us",
+        "link4_text": "Business Inquiry",
+        "social_title": "Follow us on:",
+        "contact_info_title": "Contact Information",
+        "address_title": "Address",
+        "address_line1": "2nd Floor – No. 5, Alley 76 Tran Thai Tong,",
+        "address_line2": "Dich Vong Hau Ward, Cau Giay District, Hanoi"
     }
 }

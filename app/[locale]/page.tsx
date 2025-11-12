@@ -93,17 +93,17 @@ const Home = async () => {
               <div>
                 <h3>50+</h3>
                 <p>
-                  {t("hero_section.stat_locations").split("<br />")[0]}
+                  {t("hero_section.stat_locations_line1")}
                   <br />
-                  {t("hero_section.stat_locations").split("<br />")[1]}
+                  {t("hero_section.stat_locations_line2")}
                 </p>
               </div>
               <div>
                 <h3>1M+</h3>
                 <p>
-                  {t("hero_section.stat_users").split("<br />")[0]}
+                  {t("hero_section.stat_users_line1")}
                   <br />
-                  {t("hero_section.stat_users").split("<br />")[1]}
+                  {t("hero_section.stat_users_line2")}
                 </p>
               </div>
             </div>
