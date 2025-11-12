@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Button } from "./button";
 import { ArrowDownIcon } from "./icons/arrow-down";
@@ -7,7 +8,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
 export const Header = () => {
-  const t =  useTranslations("Header")
+  const t = useTranslations("Header");
   const menu = [
     {
       title: t("home"),
@@ -37,6 +38,11 @@ export const Header = () => {
     router.push(newPath);
   };
 
+  const isEqualPath = (href: string) => {
+    const path = pathname.split(`${currentLocale}`)[1];
+    return href === path || (href === "/" && path === "");
+  };
+
   return (
     <header className="header">
       <Image
@@ -51,7 +57,7 @@ export const Header = () => {
           <a
             href={item.href}
             key={index}
-            className={item.href === pathname ? "active" : ""}
+            className={isEqualPath(item.href) ? "active" : ""}
           >
             {item.title}
           </a>
