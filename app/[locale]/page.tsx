@@ -55,9 +55,9 @@ const Home = async () => {
   ];
 
   const questions = [
-    "Nếu trạm sạc tôi đến hoàn trả pin đã đầy pin, tôi phải làm gì?",
-    "Hoàn trả pin sạc như thế nào?",
-    "Nếu trạm sạc không có pin, tôi phải làm gì?",
+    t("customer_stories.question_return_full"),
+    t("customer_stories.question_how_to_return"),
+    t("customer_stories.question_station_empty"),
   ];
 
   return (

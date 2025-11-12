@@ -88,7 +88,10 @@
             "title_line2": "dùng tin tưởng.",
             "button_text": "ĐĂNG KÝ",
             "read_more_line1": "ĐỌC",
-            "read_more_line2": "THÊM"
+            "read_more_line2": "THÊM",
+            "question_return_full": "Nếu trạm sạc tôi đến hoàn trả pin đã đầy pin, tôi phải làm gì?",
+            "question_how_to_return": "Hoàn trả pin sạc như thế nào?",
+            "question_station_empty": "Nếu trạm sạc không có pin, tôi phải làm gì?"
         }
     },
     "Header": {

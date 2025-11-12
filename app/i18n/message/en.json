@@ -88,7 +88,10 @@
             "title_line2": "trust us.",
             "button_text": "SIGN UP",
             "read_more_line1": "READ",
-            "read_more_line2": "MORE"
+            "read_more_line2": "MORE",
+            "question_return_full": "What should I do if the charging station I arrive at for returning the power bank is already full?",
+            "question_how_to_return": "How do I return the power bank?",
+            "question_station_empty": "What should I do if the charging station has no power banks available?"
         }
     },
     "Header": {
