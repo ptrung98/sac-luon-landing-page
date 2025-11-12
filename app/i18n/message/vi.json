@@ -88,5 +88,11 @@
             "read_more_line1": "ĐỌC",
             "read_more_line2": "THÊM"
         }
+    },
+    "Header": {
+        "home": "Trang chủ",
+        "products": "Sản phẩm",
+        "charging_spots": "Điểm sạc",
+        "about_us": "Về Sạc Luôn"
     }
 }

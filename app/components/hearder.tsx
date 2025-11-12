@@ -4,24 +4,25 @@ import { Button } from "./button";
 import { ArrowDownIcon } from "./icons/arrow-down";
 import { MessageIcon } from "./icons/message";
 import { usePathname, useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const Header = () => {
+  const t =  useTranslations("Header")
   const menu = [
     {
-      title: "Trang chủ",
+      title: t("home"),
       href: "/",
     },
     {
-      title: "Sản phẩm",
+      title: t("products"),
       href: "/san-pham",
     },
     {
-      title: "Điểm sạc",
+      title: t("charging_spots"),
       href: "/diem-sac",
     },
     {
-      title: "Về Sạc Luôn",
+      title: t("about_us"),
       href: "/about",
     },
   ];
@@ -30,7 +31,6 @@ export const Header = () => {
   const currentLocale = useLocale();
 
   const changeLanguage = () => {
-    console.log("change");
     const segments = pathname.split("/");
     segments[1] = currentLocale === "vi" ? "en" : "vi";
     const newPath = segments.join("/");
