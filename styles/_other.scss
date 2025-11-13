@@ -21,6 +21,14 @@
         black 1rem
       );
     }
+
+    &.bottom-right {
+      mask: radial-gradient(
+        circle at top left,
+        transparent 0.96rem,
+        black 1rem
+      );
+    }
   }
 
   &.medium {

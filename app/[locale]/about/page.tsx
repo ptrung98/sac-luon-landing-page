@@ -1,3 +1,4 @@
+import { Button } from "@/app/components/button";
 import { MaskBorder } from "@/app/components/mask-border";
 
 export default function AboutPage() {
@@ -94,6 +95,26 @@ export default function AboutPage() {
             <div className="image"></div>
           </div>
         </div>
+
+        <div className="learn-more">
+            <div className="learn-more-button-container">
+              <div className="content-container">
+                <div className="mask-border-1-container">
+                  <MaskBorder size="small" position="bottom-right" />
+                </div>
+                <div className="mask-border-2-container">
+                  <MaskBorder size="small" position="bottom-right" />
+                </div>
+                <Button
+                  className="learn-more-button"
+                  type="primary"
+                  outlinePadding="none"
+                >
+                  TÌM HIỂU THÊM
+                </Button>
+              </div>
+            </div>
+          </div>
       </section>
     </main>
   );

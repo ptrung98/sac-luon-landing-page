@@ -28,6 +28,9 @@
 
   .content {
     padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 
     .about-us {
       display: flex;
@@ -67,7 +70,6 @@
     .vision-mission-container {
       display: flex;
       gap: 2rem;
-      margin-top: 2rem;
 
       ul {
         margin-top: 1.5rem;
@@ -124,6 +126,46 @@
 
       .mission .image {
         background: url("/about/mission-image.png") center/cover no-repeat;
+      }
+    }
+
+    .learn-more {
+      background: url("/about/learn-more.png") center/cover no-repeat;
+      width: 100%;
+      aspect-ratio: 2/1;
+      margin-bottom: 10rem;
+      position: relative;
+      border-radius: 1rem;
+
+      .learn-more-button-container {
+        background-color: var(--background);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+
+        .content-container {
+          position: relative;
+          .mask-border-1-container {
+            position: absolute;
+            bottom: -1rem;
+            left: -2rem;
+          }
+
+          .mask-border-2-container {
+            position: absolute;
+            top: -2rem;
+            right: -1rem;
+          }
+
+          .learn-more-button {
+            font-size: 2.5rem;
+            padding: 1rem 2rem;
+            border-radius: 1.5rem;
+          }
+        }
       }
     }
   }
