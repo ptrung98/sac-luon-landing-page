@@ -13,6 +13,14 @@
         black 1rem
       );
     }
+
+    &.top-left {
+      mask: radial-gradient(
+        circle at bottom right,
+        transparent 0.96rem,
+        black 1rem
+      );
+    }
   }
 
   &.medium {
@@ -22,6 +30,14 @@
     &.bottom-right {
       mask: radial-gradient(
         circle at top left,
+        transparent 2.46rem,
+        black 2.5rem
+      );
+    }
+
+    &.top-left {
+      mask: radial-gradient(
+        circle at bottom right,
         transparent 2.46rem,
         black 2.5rem
       );

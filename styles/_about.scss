@@ -75,7 +75,7 @@
         line-height: 160%;
       }
 
-      h3 {
+      .title-container {
         font-size: 2.5rem;
         background-color: var(--background);
         position: absolute;
@@ -83,6 +83,31 @@
         left: 0;
         padding: 0.5rem 2.5rem;
         border-bottom-right-radius: 1rem;
+
+        h3 {
+          // font-size: 2.5rem;
+          // background-color: var(--background);
+          // position: absolute;
+          // top: 0;
+          // left: 0;
+          // padding: 0.5rem 2.5rem;
+          // border-bottom-right-radius: 1rem;
+        }
+
+        .title-content {
+          position: relative;
+          .mask-border-1-container {
+            position: absolute;
+            bottom: -1.5rem;
+            left: -2.5rem;
+          }
+
+          .mask-border-2-container {
+            position: absolute;
+            top: -0.5rem;
+            right: -3.5rem;
+          }
+        }
       }
 
       .vision,

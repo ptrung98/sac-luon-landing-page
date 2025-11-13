@@ -1,3 +1,5 @@
+import { MaskBorder } from "@/app/components/mask-border";
+
 export default function AboutPage() {
   return (
     <main className="about">
@@ -33,7 +35,17 @@ export default function AboutPage() {
         </div>
         <div className="vision-mission-container">
           <div className="vision">
-            <h3>TẦM NHÌN</h3>
+            <div className="title-container">
+              <div className="title-content">
+                <div className="mask-border-1-container">
+                  <MaskBorder size="small" position="top-left" />
+                </div>
+                <div className="mask-border-2-container">
+                  <MaskBorder size="small" position="top-left" />
+                </div>
+                <h3>TẦM NHÌN</h3>
+              </div>
+            </div>
             <ul className="text-list-bullet-point">
               <li>
                 Sạc Luôn là thương hiệu cho thuê sạc dự phòng thông minh – giúp
@@ -53,7 +65,17 @@ export default function AboutPage() {
             <div className="image"></div>
           </div>
           <div className="mission">
-            <h3>SỨ MỆNH</h3>
+            <div className="title-container">
+              <div className="title-content">
+                <div className="mask-border-1-container">
+                  <MaskBorder size="small" position="top-left" />
+                </div>
+                <div className="mask-border-2-container">
+                  <MaskBorder size="small" position="top-left" />
+                </div>
+                <h3>SỨ MỆNH</h3>
+              </div>
+            </div>
             <ul className="text-list-bullet-point">
               <li>
                 Giữ năng lượng luôn sẵn sàng cho mọi người, mọi khoảnh khắc.
