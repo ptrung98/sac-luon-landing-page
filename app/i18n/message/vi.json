@@ -112,5 +112,41 @@
         "address_title": "Địa chỉ",
         "address_line1": "Tầng 2 – số 5, ngõ 76 Trần Thái Tông,",
         "address_line2": "P. Dịch Vọng Hậu, Q. Cầu Giấy, Hà Nội"
+    },
+    "About": {
+        "hero": {
+            "text_1": "VỚI",
+            "text_2": "SẠC LUÔN",
+            "text_3": "Năng lượng",
+            "text_4": "không chỉ là pin",
+            "text_5": "mà",
+            "text_6": "là để Kết nối."
+        },
+        "about_us": {
+            "title": "VỀ CHÚNG TÔI",
+            "bullet_1": "Chúng tôi tin rằng công nghệ nên phục vụ cuộc sống một cách gần gũi và linh hoạt.",
+            "bullet_2": "Sạc Luôn không chỉ cho thuê pin – mà mang đến trải nghiệm năng lượng thông minh, giúp con người kết nối, chia sẻ và sống năng động hơn mỗi ngày."
+        },
+        "vision": {
+            "title": "TẦM NHÌN",
+            "bullet_1": {
+                "text_1": "Sạc Luôn",
+                "text_2": "là thương hiệu cho thuê sạc dự phòng thông minh – giúp bạn luôn đầy pin mọi lúc, mọi nơi."
+            },
+            "bullet_2": "Ra đời từ nhu cầu đơn giản nhưng thiết yếu trong cuộc sống hiện đại: “Hết pin thì sao?”.",
+            "bullet_3": "Chúng tôi mang đến giải pháp tiện lợi, nhanh chóng và thân thiện, giúp bạn kết nối liên tục mà không bị gián đoạn – dù đang học tập, làm việc hay di chuyển."
+        },
+        "mission": {
+            "title": "SỨ MỆNH",
+            "bullet_1": "Giữ năng lượng luôn sẵn sàng cho mọi người, mọi khoảnh khắc.",
+            "bullet_2": "Chúng tôi tin rằng công nghệ nên phục vụ cuộc sống một cách gần gũi và linh hoạt.",
+            "bullet_3": {
+                "text_1": "Sạc Luôn",
+                "text_2": "không chỉ cho thuê pin – mà mang đến trải nghiệm năng lượng thông minh, giúp con người kết nối, chia sẻ và sống năng động hơn mỗi ngày."
+            }
+        },
+        "general": {
+            "learn_more": "TÌM HIỂU THÊM"
+        }
     }
 }

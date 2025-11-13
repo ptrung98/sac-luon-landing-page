@@ -14,10 +14,10 @@ export const Header = () => {
       title: t("home"),
       href: "/",
     },
-    {
-      title: t("products"),
-      href: "/san-pham",
-    },
+    // {
+    //   title: t("products"),
+    //   href: "/san-pham",
+    // },
     {
       title: t("charging_spots"),
       href: "/diem-sac",

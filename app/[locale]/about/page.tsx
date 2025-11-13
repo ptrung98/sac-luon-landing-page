@@ -1,15 +1,21 @@
 import { Button } from "@/app/components/button";
 import { MaskBorder } from "@/app/components/mask-border";
+import { getTranslations } from "next-intl/server";
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations("About");
+
   return (
     <main className="about">
       <section className="hero">
         <div className="overlay">
           <span>
-            VỚI <span className="text-hightlight">SẠC LUÔN</span> <br />{" "}
-            <span className="text-hightlight">Năng lượng</span> không chỉ là pin{" "}
-            <br /> mà <span className="text-hightlight">là để Kết nối.</span>
+            {t("hero.text_1")}&nbsp;
+            <span className="text-hightlight">{t("hero.text_2")}</span> <br />
+            <span className="text-hightlight">{t("hero.text_3")}</span>&nbsp;
+            {t("hero.text_4")}
+            <br /> {t("hero.text_5")}&nbsp;
+            <span className="text-hightlight">{t("hero.text_6")}</span>
           </span>
         </div>
       </section>
@@ -20,20 +26,14 @@ export default function AboutPage() {
             <div className="about-us-left-image"></div>
           </div>
           <div className="about-us-right">
-            <h3 className="text-hightlight-half">VỀ CHÚNG TÔI</h3>
+            <h3 className="text-hightlight-half">{t("about_us.title")}</h3>
             <ul className="text-list-bullet-point">
-              <li>
-                Chúng tôi tin rằng công nghệ nên phục vụ cuộc sống một cách gần
-                gũi và linh hoạt.
-              </li>
-              <li>
-                Sạc Luôn không chỉ cho thuê pin – mà mang đến trải nghiệm năng
-                lượng thông minh, giúp con người kết nối, chia sẻ và sống năng
-                động hơn mỗi ngày.
-              </li>
+              <li>{t("about_us.bullet_1")}</li>
+              <li>{t("about_us.bullet_2")}</li>
             </ul>
           </div>
         </div>
+
         <div className="vision-mission-container">
           <div className="vision">
             <div className="title-container">
@@ -44,27 +44,21 @@ export default function AboutPage() {
                 <div className="mask-border-2-container">
                   <MaskBorder size="small" position="top-left" />
                 </div>
-                <h3>TẦM NHÌN</h3>
+                <h3>{t("vision.title")}</h3>
               </div>
             </div>
             <ul className="text-list-bullet-point">
               <li>
-                Sạc Luôn là thương hiệu cho thuê sạc dự phòng thông minh – giúp
-                bạn luôn đầy pin mọi lúc, mọi nơi.
+                <strong>{t("vision.bullet_1.text_1")}</strong>
+                &nbsp;
+                {t("vision.bullet_1.text_2")}
               </li>
-              <li>
-                Ra đời từ nhu cầu đơn giản nhưng thiết yếu trong cuộc sống hiện
-                đại: “Hết pin thì sao?”.
-              </li>
-              <li>
-                Chúng tôi mang đến giải pháp tiện lợi, nhanh chóng và thân
-                thiện, giúp bạn kết nối liên tục mà không bị gián đoạn – dù đang
-                học tập, làm việc hay di chuyển.
-              </li>
+              <li>{t("vision.bullet_2")}</li>
+              <li>{t("vision.bullet_3")}</li>
             </ul>
-
             <div className="image"></div>
           </div>
+
           <div className="mission">
             <div className="title-container">
               <div className="title-content">
@@ -74,47 +68,41 @@ export default function AboutPage() {
                 <div className="mask-border-2-container">
                   <MaskBorder size="small" position="top-left" />
                 </div>
-                <h3>SỨ MỆNH</h3>
+                <h3>{t("mission.title")}</h3>
               </div>
             </div>
             <ul className="text-list-bullet-point">
+              <li>{t("mission.bullet_1")}</li>
+              <li>{t("mission.bullet_2")}</li>
               <li>
-                Giữ năng lượng luôn sẵn sàng cho mọi người, mọi khoảnh khắc.
-              </li>
-              <li>
-                Chúng tôi tin rằng công nghệ nên phục vụ cuộc sống một cách gần
-                gũi và linh hoạt.
-              </li>
-              <li>
-                <strong>Sạc Luôn</strong> không chỉ cho thuê pin – mà mang đến
-                trải nghiệm năng lượng thông minh, giúp con người kết nối, chia
-                sẻ và sống năng động hơn mỗi ngày.
+                <strong>{t("mission.bullet_3.text_1")}</strong>
+                &nbsp;
+                {t("mission.bullet_3.text_2")}
               </li>
             </ul>
-
             <div className="image"></div>
           </div>
         </div>
 
         <div className="learn-more">
-            <div className="learn-more-button-container">
-              <div className="content-container">
-                <div className="mask-border-1-container">
-                  <MaskBorder size="small" position="bottom-right" />
-                </div>
-                <div className="mask-border-2-container">
-                  <MaskBorder size="small" position="bottom-right" />
-                </div>
-                <Button
-                  className="learn-more-button"
-                  type="primary"
-                  outlinePadding="none"
-                >
-                  TÌM HIỂU THÊM
-                </Button>
+          <div className="learn-more-button-container">
+            <div className="content-container">
+              <div className="mask-border-1-container">
+                <MaskBorder size="small" position="bottom-right" />
               </div>
+              <div className="mask-border-2-container">
+                <MaskBorder size="small" position="bottom-right" />
+              </div>
+              <Button
+                className="learn-more-button"
+                type="primary"
+                outlinePadding="none"
+              >
+                {t("general.learn_more")}
+              </Button>
             </div>
           </div>
+        </div>
       </section>
     </main>
   );

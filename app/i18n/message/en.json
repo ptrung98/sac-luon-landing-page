@@ -112,5 +112,35 @@
         "address_title": "Address",
         "address_line1": "2nd Floor – No. 5, Alley 76 Tran Thai Tong,",
         "address_line2": "Dich Vong Hau Ward, Cau Giay District, Hanoi"
+    },
+    "About": {
+        "hero": {
+            "text_1": "WITH",
+            "text_2": "SAC LUON",
+            "text_3": "Energy",
+            "text_4": "is not just a battery",
+            "text_5": "but",
+            "text_6": "it's for Connection."
+        },
+        "about_us": {
+            "title": "ABOUT US",
+            "bullet_1": "We believe technology should serve life in an accessible and flexible way.",
+            "bullet_2": "Sac Luon is not just about power bank rental – it offers a smart energy experience, helping people connect, share, and live more actively every day."
+        },
+        "vision": {
+            "title": "VISION",
+            "bullet_1": "Sac Luon is a smart power bank rental brand – ensuring you are always fully charged, anytime, anywhere.",
+            "bullet_2": "Born from a simple yet essential need in modern life: “What happens when the battery dies?”.",
+            "bullet_3": "We provide a convenient, fast, and friendly solution, keeping you connected without interruption – whether you're studying, working, or travelling."
+        },
+        "mission": {
+            "title": "MISSION",
+            "bullet_1": "Keep energy ready for everyone, every moment.",
+            "bullet_2": "We believe technology should serve life in an accessible and flexible way.",
+            "bullet_3": "Sac Luon is not just about power bank rental – it offers a smart energy experience, helping people connect, share, and live more actively every day."
+        },
+        "general": {
+            "learn_more": "LEARN MORE"
+        }
     }
 }
