@@ -8,6 +8,7 @@ import { MaskBorder } from "../components/mask-border";
 import { CommentCard } from "../components/comment-card";
 import { LearnMoretIcon } from "../components/icons/learn-more";
 import { getTranslations } from "next-intl/server";
+import Slider from "../components/slider";
 
 const Home = async () => {
   const t = await getTranslations("HomePage");
@@ -173,6 +174,36 @@ const Home = async () => {
             </div>
           </div>
         </section>
+      </section>
+      <section className="features-mobile">
+        <Slider width={25} height={10.5}>
+          <div className="slide item-1">
+            <div className="overlay">
+              <div className="content"></div>
+            </div>
+          </div>
+          <div className="slide item-2">
+            <div className="overlay">
+              <div className="content"></div>
+            </div>
+          </div>
+          <div className="slide item-3">
+            <div className="overlay">
+              <div className="content">
+                <div>
+                  <p className="text-1">{t("features.card3_stat")}</p>
+                  <p className="text-2">{t("features.card3_stat_desc")}</p>
+                </div>
+                <div className="text-3">
+                  {t("features.card3_title_line1")}{" "}
+                  {t("features.card3_title_line2")} <br />{" "}
+                  {t("features.card3_title_line3")}{" "}
+                  {t("features.card3_title_line4")}
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
       </section>
 
       <div className="section-container">
