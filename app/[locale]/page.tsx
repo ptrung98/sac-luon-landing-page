@@ -36,6 +36,21 @@ const Home = async () => {
     },
   ];
 
+  const howtouseItems = [
+    {
+      title: t("how_to_use.step1_title"),
+      desc: t("how_to_use.step1_desc"),
+    },
+    {
+      title: t("how_to_use.step2_title"),
+      desc: t("how_to_use.step2_desc"),
+    },
+    {
+      title: t("how_to_use.step3_title"),
+      desc: t("how_to_use.step3_desc"),
+    },
+  ];
+
   const commentsData = [
     {
       avatar: "/home/comment-card-avatar-default.png",
@@ -176,6 +191,7 @@ const Home = async () => {
         </section>
       </section>
       <section className="features-mobile">
+        <span className="features-mobile-title">{t("why_choose.title")}</span>
         <Slider width={25} height={10.5}>
           <div className="slide item-1">
             <div className="overlay">
@@ -204,6 +220,13 @@ const Home = async () => {
             </div>
           </div>
         </Slider>
+        <Button
+          type="secondary"
+          outlinePadding="medium"
+          icon={<ArrowTopRightIcon />}
+        >
+          {t("features.card1_button")}
+        </Button>
       </section>
 
       <div className="section-container">
@@ -260,44 +283,19 @@ const Home = async () => {
 
             <div className="howtouse-right">
               <div className="howtouse-steps">
-                <div className="step">
-                  <ArrowRightCircleIcon
-                    stroke="#262138"
-                    width={21}
-                    height={21}
-                  />
-                  <div className="step-content">
-                    <span>{t("how_to_use.step1_title")}</span>
-                    <p>{t("how_to_use.step1_desc")}</p>
+                {howtouseItems.map((item, index) => (
+                  <div className="step" key={index}>
+                    <div className="step-title">
+                      <ArrowRightCircleIcon
+                        stroke="#262138"
+                        width={21}
+                        height={21}
+                      />
+                      <span>{item.title}</span>
+                    </div>
+                    <div>{item.desc}</div>
                   </div>
-                </div>
-
-                <div className="step">
-                  <ArrowRightCircleIcon
-                    stroke="#262138"
-                    width={21}
-                    height={21}
-                  />
-                  <div className="step-content">
-                    <span>{t("how_to_use.step2_title")}</span>
-                    <p>{t("how_to_use.step2_desc")}</p>
-                  </div>
-                </div>
-
-                <div className="step">
-                  <ArrowRightCircleIcon
-                    stroke="#262138"
-                    width={21}
-                    height={21}
-                  />
-                  <div className="step-content">
-                    <span>{t("how_to_use.step3_title")}</span>
-                    <p>
-                      {t("how_to_use.step3_desc_line1")}{" "}
-                      {t("how_to_use.step3_desc_line2")}
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
 
               <div className="howtouse-button-container">
@@ -409,13 +407,7 @@ const Home = async () => {
                   className="learn-more-button"
                   type="primary"
                   outlinePadding="none"
-                  icon={
-                    <ArrowTopRightIcon
-                      width={19}
-                      height={19}
-                      style={{ marginLeft: "1rem" }}
-                    />
-                  }
+                  icon={<ArrowTopRightIcon width={19} height={19} />}
                 >
                   <i>{t("core_values.button_text")}</i>
                 </Button>
@@ -435,6 +427,11 @@ const Home = async () => {
                 <br />
                 {t("customer_stories.title_line2")}
               </h1>
+              <p className="customer-stories-content">
+                {t("customer_stories.content_line1")}
+                <br />
+                {t("customer_stories.content_line2")}
+              </p>
             </div>
             <div className="customer-stories-title-cta">
               <div className="learn-more-button-container">
@@ -459,7 +456,7 @@ const Home = async () => {
           </div>
 
           <div className="customer-stories-content-container">
-            <div className="comments-container">
+            {/* <div className="comments-container">
               {commentsData.map((data, index) => (
                 <CommentCard key={index} data={data} />
               ))}
@@ -472,7 +469,7 @@ const Home = async () => {
                   <LearnMoretIcon className="learn-more-icon" />
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="question-list-container">
               <div className="question-list">
                 {questions.map((question, index) => (

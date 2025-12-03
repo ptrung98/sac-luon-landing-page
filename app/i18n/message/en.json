@@ -52,8 +52,7 @@
             "step2_title": "SCAN AND GET THE POWER BANK",
             "step2_desc": "Scan the QR code on the station, and the power bank automatically pops out – ready to use immediately.",
             "step3_title": "CHARGE FREELY, RETURN FLEXIBLY",
-            "step3_desc_line1": "Return the power bank at any station in the system.",
-            "step3_desc_line2": "The system automatically records the return and processes payment.",
+            "step3_desc": "Return the power bank at any station in the system. The system automatically records the return and processes payment.",
             "button_text": "EXPLORE STATIONS NEAR YOU"
         },
         "outstanding_features": {
@@ -86,6 +85,8 @@
             "subtitle": "Customer Stories",
             "title_line1": "Millions of users",
             "title_line2": "trust us.",
+            "content_line1": "Anyone can “SạcLuôn” when needed.",
+            "content_line2": "We are proud to accompany you on every journey.",
             "button_text": "SIGN UP",
             "read_more_line1": "READ",
             "read_more_line2": "MORE",

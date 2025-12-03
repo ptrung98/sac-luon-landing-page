@@ -201,10 +201,28 @@
 }
 
 .features-mobile {
+  margin-top: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 1rem;
+
+  .features-mobile-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .btn svg {
+    width: 0.75rem;
+    width: 0.75rem;
+    path {
+      stroke: #ffde15;
+    }
+  }
 
   .overlay {
     background: rgba(12, 0, 34, 0.7);
@@ -257,7 +275,6 @@
 }
 
 .section-container {
-  margin-top: 24rem;
   padding: 0 14rem;
   display: flex;
   flex-direction: column;
@@ -265,6 +282,8 @@
 }
 
 .whychoose {
+  margin-top: 24rem;
+
   .whychoose-container {
     display: flex;
     justify-content: space-between;
@@ -338,10 +357,10 @@
     }
 
     .howtouse-title {
-      font-size: 4rem;
       font-weight: 800;
       margin-bottom: 32px;
       color: #222;
+      font-size: 4rem;
     }
   }
 
@@ -366,34 +385,32 @@
 
         .step {
           display: flex;
-          align-items: flex-start;
-          align-items: center;
-          gap: 1rem;
 
-          .step-icon {
-            color: #222;
-            font-size: 18px;
-            line-height: 1;
-            margin-top: 2px;
-          }
-
-          .step-content {
-            flex: 1;
+          .step-title {
             display: flex;
-            justify-content: space-evenly;
-            gap: 2rem;
+            align-items: center;
+            width: 300px;
+            gap: 1rem;
+
+            .step-icon {
+              color: #222;
+              font-size: 18px;
+              line-height: 1;
+              margin-top: 2px;
+            }
+
             span {
               font-size: 16px;
               font-weight: 700;
               color: #222;
-              flex: 0 0 30%;
+              flex: 0 0 60%;
             }
+          }
 
-            p {
-              flex: 1;
-              font-size: 14px;
-              color: #555;
-            }
+          p {
+            flex: 1;
+            font-size: 14px;
+            color: #555;
           }
         }
       }
@@ -446,14 +463,13 @@
   }
 
   .outstanding-features-content-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
     gap: 1rem;
     width: 100%;
 
     .feature-item {
       flex: 1;
-      padding: 1rem;
       border-radius: 1rem;
       position: relative;
       aspect-ratio: 1 / 1.25;
@@ -470,6 +486,7 @@
       }
       .text-container {
         flex: 1;
+        padding: 1rem;
         h4 {
           font-size: 2rem;
           font-weight: 600;
@@ -551,6 +568,12 @@
       .learn-more-button {
         font-size: 3rem;
         padding: 1rem 2rem;
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-left: 1rem;
+        }
       }
 
       .content-container {
@@ -588,10 +611,15 @@
       }
 
       .customer-stories-title {
+        margin-top: 1rem;
         font-size: 4rem;
         font-weight: 800;
         color: #222;
         text-transform: uppercase;
+      }
+
+      .customer-stories-content {
+        margin-top: 1rem;
       }
     }
 
@@ -682,7 +710,7 @@
         .question-item {
           border-radius: 5rem;
           background-color: #ffffff;
-          font-size: 20px;
+          font-size: 1.25rem;
           color: #4a4363;
           padding: 0.5rem 1rem;
           display: flex;
@@ -696,15 +724,188 @@
   }
 }
 
+@media screen and (max-width: $breakpoint-md) {
+  .section-container {
+    padding: 0 2rem;
+  }
 
-@media screen and (max-width: $breakpoint-lg) {
-  .features{
+  .features {
     visibility: hidden;
+  }
+
+  .whychoose {
+    margin-top: 5rem;
+    flex-direction: column;
+    .whychoose-container {
+      flex-direction: column;
+
+      .whychoose-title {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .howtouse {
+    flex-direction: column;
+    .howtouse-container {
+      flex-direction: column;
+
+      .howtouse-left {
+        width: 100%;
+      }
+
+      .howtouse-right {
+        .howtouse-steps {
+          .step {
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .step-title {
+              width: 100%;
+              span {
+                flex: 0 0 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .howtouse-header {
+      .howtouse-title {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .outstanding-features {
+    flex-direction: column;
+
+    .outstanding-features-header {
+      .outstanding-features-title-container {
+        .outstanding-features-title {
+          font-size: 2rem;
+        }
+      }
+    }
+    .outstanding-features-title-container {
+      flex-direction: column;
+    }
+    .outstanding-features-content-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .core-values {
+    flex-direction: column;
+
+    .core-values-header {
+      flex-direction: column;
+
+      .core-values-title-container {
+        .core-values-title {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .core-values-content-container {
+      width: 100%;
+      aspect-ratio: 2.5/ 1;
+      position: relative;
+
+      .learn-more-button-container {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        padding: 0.5rem 0 0 0.5rem;
+        border-radius: 1rem 0 0 0;
+        background: var(--background);
+
+        .learn-more-button {
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+
+          svg {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-left: 0rem;
+          }
+        }
+
+        .content-container {
+          position: relative;
+          .mask-border-1-container {
+            position: absolute;
+            bottom: 0;
+            left: -1.5rem;
+          }
+          .mask-border-2-container {
+            position: absolute;
+            top: -1.5rem;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .customer-stories {
+    .customer-stories-header {
+      flex-direction: column;
+      .customer-stories-title-container {
+        .customer-stories-title {
+          font-size: 2rem;
+        }
+      }
+
+      .customer-stories-title-cta {
+        aspect-ratio: 2 / 1;
+        border-radius: 1.25rem;
+
+        .learn-more-button-container {
+          padding: 0.5rem 0.8rem 0.5rem 0;
+          border-radius: 0 1rem 0 0;
+          background: var(--background);
+
+          .learn-more-button {
+            font-size: 1.25rem;
+          }
+
+          .content-container {
+            position: relative;
+            .mask-border-1-container {
+              position: absolute;
+              bottom: -0.5rem;
+              right: -1.75rem;
+            }
+            .mask-border-2-container {
+              position: absolute;
+              top: -1.5rem;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .customer-stories-content-container {
+      .question-list-container {
+        .question-list {
+          max-width: 400px;
+          overflow: auto;
+          .question-item {
+            min-width: 400px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
-  .features-mobile{
+  .features-mobile {
     visibility: hidden;
   }
 }

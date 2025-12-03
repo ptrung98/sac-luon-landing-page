@@ -18,7 +18,7 @@
             "card1_title_line2": "Mọi Lúc, Mọi Nơi",
             "card1_item1": "Tìm điểm sạc",
             "card1_item2": "Hình thức thanh toán",
-            "card1_button": "Tìm hiểu thêm",
+            "card1_button": "TÌM HIỂU THÊM",
             "card2_title_line1": "PIN ĐỎ",
             "card2_title_line2": "SẠC LUÔN LO",
             "card2_text1": "Không cần mang theo sạc dự phòng cá nhân.",
@@ -52,8 +52,7 @@
             "step2_title": "QUÉT MÃ VÀ LẤY PIN",
             "step2_desc": "Quét mã QR trên trạm, pin tự động bật ra – sẵn sàng sử dụng ngay.",
             "step3_title": "SẠC THOẢI MÁI, TRẢ LINH HOẠT",
-            "step3_desc_line1": "Trả pin tại bất kỳ trạm nào trong hệ thống.",
-            "step3_desc_line2": "Hệ thống tự ghi nhận và thanh toán tự động.",
+            "step3_desc": "Trả pin tại bất kỳ trạm nào trong hệ thống. Hệ thống tự ghi nhận và thanh toán tự động.",
             "button_text": "KHÁM PHÁ TRẠM GẦN BẠN"
         },
         "outstanding_features": {
@@ -86,6 +85,8 @@
             "subtitle": "Câu chuyện khách hàng",
             "title_line1": "Hàng triệu người",
             "title_line2": "dùng tin tưởng.",
+            "content_line1": "Ai cũng có thể “SạcLuôn” khi cần.",
+            "content_line2": "Chúng tôi tự hào khi được đồng hành cùng bạn trong mọi hành trình.",
             "button_text": "ĐĂNG KÝ",
             "read_more_line1": "ĐỌC",
             "read_more_line2": "THÊM",
