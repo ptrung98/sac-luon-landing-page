@@ -68,7 +68,19 @@
       display: none;
     }
     .actions {
-      display: none;
+      .btn-lang-container, .btn-contact-container{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .header {
+    .actions {
+      .menu-icon {
+        display: none;
+      }
     }
   }
 }

@@ -6,6 +6,7 @@ import { ArrowDownIcon } from "./icons/arrow-down";
 import { MessageIcon } from "./icons/message";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { MenuMobileIcon } from "./icons/menu-mobile";
 
 export const Header = () => {
   const t = useTranslations("Header");
@@ -43,6 +44,10 @@ export const Header = () => {
     return href === path || (href === "/" && path === "");
   };
 
+  const openPopupContactForm = () => {
+    console.log("Open contact form");
+  };
+
   return (
     <header className="header">
       <Image
@@ -64,23 +69,32 @@ export const Header = () => {
         ))}
       </nav>
       <div className="actions">
-        <Button
-          className="btn-lang"
-          type="transparent"
-          outlinePadding="small"
-          icon={<ArrowDownIcon />}
-          onClick={changeLanguage}
-        >
-          VI
-        </Button>
-        <Button
-          className="btn-contact"
-          type="primary"
-          outlinePadding="small"
-          icon={<MessageIcon style={{ marginLeft: "0.4rem" }} />}
-        >
-          {t("contact")}
-        </Button>
+        <div className="btn-lang-container">
+          <Button
+            className="btn-lang"
+            type="transparent"
+            outlinePadding="small"
+            icon={<ArrowDownIcon />}
+            onClick={changeLanguage}
+          >
+            VI
+          </Button>
+        </div>
+        <div className="btn-contact-container">
+          <Button
+            className="btn-contact"
+            type="primary"
+            outlinePadding="small"
+            icon={<MessageIcon style={{ marginLeft: "0.4rem" }} />}
+            onClick={openPopupContactForm}
+          >
+            {t("contact")}
+          </Button>
+        </div>
+
+        <div className="menu-icon">
+          <MenuMobileIcon />
+        </div>
       </div>
     </header>
   );
