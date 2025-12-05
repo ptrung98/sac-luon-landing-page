@@ -101,6 +101,10 @@ const Home = async () => {
                   style={{ marginLeft: "0.25rem" }}
                 />
               }
+              openLink={{
+                href: "/diem-sac",
+                target: "_blank",
+              }}
             >
               {t("hero_section.cta_main")}
             </Button>
@@ -190,46 +194,48 @@ const Home = async () => {
           </div>
         </section>
       </section>
-      <section className="features-mobile">
-        <span className="features-mobile-title">{t("why_choose.title")}</span>
-        <Slider width={25} height={10.5} dotPosition="bottomLeft">
-          <div className="slide item-1">
-            <div className="overlay">
-              <div className="content"></div>
-            </div>
-          </div>
-          <div className="slide item-2">
-            <div className="overlay">
-              <div className="content"></div>
-            </div>
-          </div>
-          <div className="slide item-3">
-            <div className="overlay">
-              <div className="content">
-                <div>
-                  <p className="text-1">{t("features.card3_stat")}</p>
-                  <p className="text-2">{t("features.card3_stat_desc")}</p>
-                </div>
-                <div className="text-3">
-                  {t("features.card3_title_line1")}{" "}
-                  {t("features.card3_title_line2")} <br />{" "}
-                  {t("features.card3_title_line3")}{" "}
-                  {t("features.card3_title_line4")}
-                </div>
-              </div>
-            </div>
-          </div>
-        </Slider>
-        <Button
-          type="secondary"
-          outlinePadding="medium"
-          icon={<ArrowTopRightIcon />}
-        >
-          {t("features.card1_button")}
-        </Button>
-      </section>
 
       <div className="section-container">
+        <section className="features-mobile">
+          <span className="features-mobile-title">{t("why_choose.title")}</span>
+          <div className="features-mobile-slider">
+            <Slider dotPosition="bottomLeft">
+              <div className="slide item-1">
+                <div className="overlay">
+                  <div className="content"></div>
+                </div>
+              </div>
+              <div className="slide item-2">
+                <div className="overlay">
+                  <div className="content"></div>
+                </div>
+              </div>
+              <div className="slide item-3">
+                <div className="overlay">
+                  <div className="content">
+                    <div>
+                      <p className="text-1">{t("features.card3_stat")}</p>
+                      <p className="text-2">{t("features.card3_stat_desc")}</p>
+                    </div>
+                    <div className="text-3">
+                      {t("features.card3_title_line1")}{" "}
+                      {t("features.card3_title_line2")} <br />{" "}
+                      {t("features.card3_title_line3")}{" "}
+                      {t("features.card3_title_line4")}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
+          <Button
+            type="secondary"
+            outlinePadding="medium"
+            icon={<ArrowTopRightIcon />}
+          >
+            {t("features.card1_button")}
+          </Button>
+        </section>
         <section className="whychoose">
           <div className="whychoose-container">
             <div className="whychoose-left">
@@ -309,6 +315,10 @@ const Home = async () => {
                       style={{ marginLeft: "0.4rem" }}
                     />
                   }
+                  openLink={{
+                    href: "/diem-sac",
+                    target: "_blank",
+                  }}
                 >
                   {t("how_to_use.button_text")}
                 </Button>

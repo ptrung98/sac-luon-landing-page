@@ -210,7 +210,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   gap: 1rem;
 
   .features-mobile-title {
@@ -279,6 +278,7 @@ body {
 }
 
 .section-container {
+  margin-top: 22rem;
   padding: 0 14rem;
   display: flex;
   flex-direction: column;
@@ -286,8 +286,6 @@ body {
 }
 
 .whychoose {
-  margin-top: 24rem;
-
   .whychoose-container {
     display: flex;
     justify-content: space-between;
@@ -731,6 +729,7 @@ body {
 
 @media (max-width: $breakpoint-lg) {
   .section-container {
+    margin-top: 0rem;
     padding: 0 2rem;
   }
 
@@ -761,7 +760,6 @@ body {
   }
 
   .whychoose {
-    margin-top: 5rem;
     flex-direction: column;
     .whychoose-container {
       flex-direction: column;
