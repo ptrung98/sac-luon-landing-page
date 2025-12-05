@@ -706,11 +706,12 @@ body {
       align-items: center;
       margin-top: 2rem;
       justify-content: space-between;
-      // padding: 0 2rem;
       gap: 2rem;
+
       .question-list {
         display: flex;
         gap: 1rem;
+        flex:1;
         .question-item {
           border-radius: 5rem;
           background-color: #ffffff;
@@ -728,7 +729,7 @@ body {
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-lg) {
   .section-container {
     padding: 0 2rem;
   }
@@ -919,7 +920,6 @@ body {
     .customer-stories-content-container {
       .question-list-container {
         .question-list {
-          max-width: 400px;
           overflow: auto;
           .question-item {
             min-width: 400px;

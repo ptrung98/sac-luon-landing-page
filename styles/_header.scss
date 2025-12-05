@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoint-md) {
+@media screen and (max-width: $breakpoint-lg) {
   .header {
     .nav {
       display: none;
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: $breakpoint-lg) {
   .header {
     .actions {
       .menu-icon {
