@@ -1,5 +1,7 @@
 @use "../styles/variables" as *;
-
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,6 @@
   display: flex;
   position: relative;
   justify-content: center;
-
   height: 100vh;
 
   .hero-content {
@@ -705,7 +706,7 @@
       align-items: center;
       margin-top: 2rem;
       justify-content: space-between;
-      padding: 0 2rem;
+      // padding: 0 2rem;
       gap: 2rem;
       .question-list {
         display: flex;
@@ -727,7 +728,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-md) {
   .section-container {
     padding: 0 2rem;
   }
@@ -755,7 +756,7 @@
   }
 
   .features {
-    visibility: hidden;
+    display: none;
   }
 
   .whychoose {
