@@ -14,11 +14,12 @@ type ButtonProps = {
 } & Omit<ComponentPropsWithoutRef<"button">, "type">;
 
 export const Button = (props: ButtonProps) => {
-  const { type, outlinePadding, className, children, icon, ...rest } = props;
+  const { type, outlinePadding, className, children, icon, openLink, ...rest } =
+    props;
 
   const handleOnClick = () => {
-    if (props.openLink) {
-      const { href, target } = props.openLink;
+    if (openLink) {
+      const { href, target } = openLink;
       window.open(href, target || "_self");
     }
   };
@@ -30,7 +31,6 @@ export const Button = (props: ButtonProps) => {
       <button
         className={`btn btn-${type}
         } ${className}`}
-
         onClick={handleOnClick}
         {...rest}
       >
