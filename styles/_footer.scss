@@ -1,8 +1,9 @@
+@use "../styles/variables" as *;
+
 .footer {
   position: relative;
   background: url("/footer/background.png") center/cover no-repeat;
   color: #fff;
-  // padding: 4rem 2rem 2rem;
   margin-top: 4rem;
 
   .footer-overlay {
@@ -13,11 +14,10 @@
 
   .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     gap: 2.5rem;
     align-items: start;
     text-align: left;
-    // padding: 2rem;
   }
 
   .footer-logo {
@@ -92,7 +92,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: $breakpoint-md) {
     .footer-content {
       text-align: center;
     }
@@ -101,3 +101,5 @@
     }
   }
 }
+
+

@@ -12,7 +12,7 @@ export default async function Footer() {
   return (
     <footer className="footer">
       <div className="footer-overlay">
-        <div className="footer-content container">
+        <div className="footer-content">
           <div className="footer-logo">
             <Image
               src="/footer/logo.png"

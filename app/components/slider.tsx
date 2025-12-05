@@ -6,6 +6,7 @@ type SliderProps = {
   width?: number;
   height?: number;
   children: React.ReactElement[];
+  dotPosition?: "bottomLeft" | "bottomRight" | "bottomMiddle";
 };
 
 export default function Slider(props: SliderProps) {
@@ -34,7 +35,15 @@ export default function Slider(props: SliderProps) {
       >
         {props.children}
       </div>
-      <div className="dots">
+      <div
+        className={`dots ${
+          props.dotPosition === "bottomLeft"
+            ? "dots-bottomLeft"
+            : props.dotPosition === "bottomRight"
+            ? "dots-bottomRight"
+            : "dots-bottomMiddle"
+        }`}
+      >
         {props.children.map((_, i) => (
           <span
             key={i}

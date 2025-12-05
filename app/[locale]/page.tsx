@@ -192,7 +192,7 @@ const Home = async () => {
       </section>
       <section className="features-mobile">
         <span className="features-mobile-title">{t("why_choose.title")}</span>
-        <Slider width={25} height={10.5}>
+        <Slider width={25} height={10.5} dotPosition="bottomLeft">
           <div className="slide item-1">
             <div className="overlay">
               <div className="content"></div>
@@ -456,7 +456,7 @@ const Home = async () => {
           </div>
 
           <div className="customer-stories-content-container">
-            {/* <div className="comments-container">
+            <div className="comments-container">
               {commentsData.map((data, index) => (
                 <CommentCard key={index} data={data} />
               ))}
@@ -469,7 +469,16 @@ const Home = async () => {
                   <LearnMoretIcon className="learn-more-icon" />
                 </div>
               </div>
-            </div> */}
+            </div>
+            <div className="comments-mobile-container">
+              <Slider dotPosition="bottomMiddle">
+                {commentsData.map((data, index) => (
+                  <div className="slide" key={index}>
+                    <CommentCard data={data} />
+                  </div>
+                ))}
+              </Slider>
+            </div>
             <div className="question-list-container">
               <div className="question-list">
                 {questions.map((question, index) => (

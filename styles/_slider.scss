@@ -12,7 +12,7 @@
   width: 100%;
   flex-shrink: 0;
   position: relative;
-  background: #000000B8;
+  background: transparent;
 }
 
 .slide img {
@@ -40,5 +40,20 @@
       background: #ffd700;
       transform: scale(1.2);
     }
+  }
+
+  &.dots-bottomLeft {
+    left: 1.25rem;
+    bottom: 1rem;
+  }
+  &.dots-bottomMiddle {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+  }
+  &.dots-bottomRight {
+    right: 1.25rem;
+    left: auto;
+    bottom: 1rem;
   }
 }

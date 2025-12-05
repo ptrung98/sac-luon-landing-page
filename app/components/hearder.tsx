@@ -79,7 +79,7 @@ export const Header = () => {
           outlinePadding="small"
           icon={<MessageIcon style={{ marginLeft: "0.4rem" }} />}
         >
-          LIÊN HỆ
+          {t("contact")}
         </Button>
       </div>
     </header>

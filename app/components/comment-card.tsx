@@ -40,13 +40,13 @@ export const CommentCard = (props: CommentCardProps) => {
           </blockquote>
         </div>
 
-        <div className="reviewer-image-box">
+        {/* <div className="reviewer-image-box">
           <img
             className="reviewer-image"
             src={props.data.image}
             alt="Người đàn ông đang sử dụng dịch vụ SạcLuôn"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
