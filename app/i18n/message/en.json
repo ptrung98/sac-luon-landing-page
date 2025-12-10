@@ -100,7 +100,8 @@
         "products": "Products",
         "charging_spots": "Charging Spots",
         "about_us": "About Sac Luon",
-        "contact": "Contact"
+        "contact": "Contact",
+        "faq": "FAQ"
     },
     "Footer": {
         "logo_alt": "Sac Luon",
@@ -144,5 +145,40 @@
         "general": {
             "learn_more": "LEARN MORE"
         }
+    },
+    "FAQ": {
+        "hero": {
+            "text": "FREQUENTLY ASKED QUESTIONS"
+        },
+        "items": [
+            {
+                "question": "What is Sac Luon?",
+                "answer": "Sac Luon is an on-site portable charger rental service. You only need to scan the QR code at the stations, rent the power bank immediately, and return it to any other station when finished. The service operates 24/7."
+            },
+            {
+                "question": "Where can I rent a power bank?",
+                "answer": "There are currently over 5,000 stations in Ho Chi Minh City, Hanoi, Da Nang, Can Tho,... located at Vincom, Lotte, Circle K, GS25, Highlands, The Coffee House, pubs, karaoke, airports, bus stations... Open the Sac Luon app to find the nearest station."
+            },
+            {
+                "question": "How to rent and return the power bank?",
+                "answer": "Step 1: Download the Sac Luon app or scan the QR code at the station<br/> Step 2: Select the power bank + Deposit the rental fee shown on the app screen via payment channels like Momo, ZaloPay, bank cards...<br/> Step 3: The charging slot automatically pops out the power bank + Take it for use<br/> Step 4: Insert the power bank into any empty slot at another station + The app automatically ends the rental session and refunds the deposit (minus the rental fee)"
+            },
+            {
+                "question": "What is the rental price?",
+                "answer": "10,000 mAh Power Bank: from 10,000đ – 25,000đ/day<br/> 20,000 mAh Power Bank (PD 20W fast charging): from 15,000đ – 35,000đ/day<br/> Calculated based on actual usage hours, with a maximum limit not exceeding the daily cap."
+            },
+            {
+                "question": "What is the fee calculation if used for more than 24 hours?",
+                "answer": "Each subsequent 24 hours costs an additional 50–70% of the initial daily price (depending on the power bank type). The longer you use it, the cheaper it gets, up to a maximum of 7 days when the billing automatically stops."
+            },
+            {
+                "question": "Are the power banks clean and fully charged?",
+                "answer": "1. If the power bank is not returned within 7 days, the system will automatically charge a buyout fee:<br/> * 10,000 mAh Power Bank: 450,000đ<br/> * 20,000 mAh Power Bank: 650,000đ (this already includes the previous rental fee)."
+            },
+            {
+                "question": "Is fast charging and multi-port support available?",
+                "answer": "The 20,000 mAh Power Bank supports PD 20W + QC 3.0 fast charging, and comes with 3 built-in cables: Lightning, Type-C, Micro USB."
+            }
+        ]
     }
 }

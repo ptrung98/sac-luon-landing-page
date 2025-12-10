@@ -24,6 +24,10 @@ export const Header = () => {
       href: "/diem-sac",
     },
     {
+      title: t("faq"),
+      href: "/faq",
+    },
+    {
       title: t("about_us"),
       href: "/about",
     },

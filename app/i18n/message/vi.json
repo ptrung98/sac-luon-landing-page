@@ -100,7 +100,8 @@
         "products": "Sản phẩm",
         "charging_spots": "Điểm sạc",
         "about_us": "Về Sạc Luôn",
-        "contact": "Liên hệ"
+        "contact": "Liên hệ",
+        "faq": "Câu hỏi thường gặp"
     },
     "Footer": {
         "logo_alt": "Sạc Luôn",
@@ -150,5 +151,40 @@
         "general": {
             "learn_more": "TÌM HIỂU THÊM"
         }
+    },
+    "FAQ": {
+        "hero": {
+            "text": "CÂU HỎI THƯỜNG GẶP"
+        },
+        "items": [
+            {
+                "question": "Sạc Luôn là gì?",
+                "answer": "Sạc Luôn là dịch vụ cho thuê pin sạc dự phòng tại chỗ. Bạn chỉ cần quét mã QR tại các trạm, thuê pin ngay lập tức và trả lại ở bất kỳ trạm nào khác khi xong, hoạt động 24/7."
+            },
+            {
+                "question": "Thuê pin ở đâu được?",
+                "answer": "Hiện có hơn 5.000 trạm tại TP HCM, Hà Nội, Đà Nẵng, Cần Thơ,... đặt ở Vincom, Lotte, Circle K, GS25, Highlands, The Coffee House, quán nhậu, karaoke, sân bay, bến xe... Mở app Sạc Luôn là thấy trạm gần nhất ngay."
+            },
+            {
+                "question": "Cách thuê và trả pin như thế nào?",
+                "answer": "Bước 1: Tải app Sạc Luôn hoặc quét mã QR tại trạm <br/> Bước 2: Chọn pin + Đặt cọc số tiền thuê pin hiển thị trên màn hình ứng dụng qua các kênh thanh toán như Momo, ZaloPay, thẻ ngân hàng...<br/> Bước 3: Ổ pin tự bật ra + Mang đi sử dụng<br/> Bước 4: Đặt pin vào bất kỳ ô trống nào tại trạm khác + App tự kết thúc phiên thuê và trả lại tiền cọc thuê pin (trừ đi phí thuê)"
+            },
+            {
+                "question": "Giá thuê bao nhiêu tiền?",
+                "answer": "Pin 10.000 mAh: từ 10.000đ – 25.000đ/ngày<br/> Pin 20.000 mAh (sạc nhanh PD 20W): từ 15.000đ – 35.000đ/ngày<br/> Tính theo giờ thực tế sử dụng, tối đa không quá giá trần trong ngày."
+            },
+            {
+                "question": "Nếu dùng quá 24h thì tính phí thế nào?",
+                "answer": "Mỗi 24h tiếp theo tính thêm 50–70% giá ngày đầu (tùy loại pin). Dùng càng lâu càng rẻ, tối đa 7 ngày sẽ tự động dừng tính phí."
+            },
+            {
+                "question": "Pin có sạch sẽ và đầy pin không?",
+                "answer": "1. Nếu không trả pin trong 7 ngày, hệ thống sẽ tự động thu phí mua đứt:<br/> * Pin 10.000 mAh: 450.000đ<br/> * Pin 20.000 mAh: 650.000đ (đã bao gồm tiền thuê trước đó)."
+            },
+            {
+                "question": "Có hỗ trợ sạc nhanh và nhiều cổng không?",
+                "answer": "Cói Pin 20.000 mAh hỗ trợ sạc nhanh PD 20W + QC 3.0, kèm sẵn 3 dây: Lightning, Type-C, Micro USB."
+            }
+        ]
     }
 }

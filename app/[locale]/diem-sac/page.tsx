@@ -51,7 +51,7 @@ export default function ChargingPointPage() {
           </div>
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1861.9867772872062!2d105.78903068526209!3d21.0337441239145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1763113923871!5m2!1svi!2s"
+              src="https://maps.google.com/maps?q=21.0285, 105.8542&hl=vi&z=15&output=embed"
               style={{
                 border: 0,
                 width: "100%",
