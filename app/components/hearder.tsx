@@ -7,8 +7,11 @@ import { MessageIcon } from "./icons/message";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { MenuMobileIcon } from "./icons/menu-mobile";
+import { useState } from "react";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const t = useTranslations("Header");
   const menu = [
     {
@@ -50,6 +53,10 @@ export const Header = () => {
 
   const openPopupContactForm = () => {
     console.log("Open contact form");
+  };
+
+  const handleClickMenuIcon = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -96,8 +103,19 @@ export const Header = () => {
           </Button>
         </div>
 
-        <div className="menu-icon">
-          <MenuMobileIcon />
+        <div className="menu-icon" onMouseLeave={handleClickMenuIcon}>
+          <MenuMobileIcon onClick={handleClickMenuIcon} />
+          <nav className={`nav-mobile ${isMenuOpen ? 'open' : 'closed'}`}>
+            {menu.map((item, index) => (
+              <a
+                href={item.href}
+                key={index}
+                className={isEqualPath(item.href) ? "active" : ""}
+              >
+                {item.title}
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
     </header>
