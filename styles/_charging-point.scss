@@ -1,3 +1,5 @@
+@use "../styles/variables" as *;
+
 .charging-point {
   .hero {
     width: 100%;
@@ -110,13 +112,13 @@
 
       .select-location {
         position: absolute;
-        top: 3rem;
+        top: 7rem;
         left: 50%;
         transform: translate(-50%);
         display: flex;
         width: 90%;
         border-radius: 1.25rem;
-        background: #FFFFFF5C;
+        background: #ffffff5c;
         justify-content: center;
 
         gap: 2rem;
@@ -129,11 +131,58 @@
 
         box-shadow: 2px 68px 68px 0px #00000012;
 
-        box-shadow: 5px 154px 92px 0px #0000000A;
+        box-shadow: 5px 154px 92px 0px #0000000a;
 
         box-shadow: 10px 273px 109px 0px #00000003;
 
         box-shadow: 15px 426px 119px 0px #00000000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .charging-point {
+    .section-content-container {
+      padding: 0 2rem;
+      gap: 5rem;
+
+      .download-app-container {
+        flex-direction: column;
+
+        .download-app-right {
+          span {
+            font-size: 1.5rem;
+          }
+          .link-app-button{
+            margin-top: 1rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .app-store, .google-store {
+              width: 200px;
+              height: 60px;
+            }
+          }
+        }
+      }
+
+      .charging-point-list{
+        .charging-point-list-header {
+          .cta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            .left{
+              font-size: 1.5rem;
+            }
+            .right{
+              flex-direction: row;
+              display: flex;
+              gap: 1.5rem;
+            }
+          }
+        }
       }
     }
   }

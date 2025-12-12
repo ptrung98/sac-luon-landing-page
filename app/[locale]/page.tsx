@@ -109,7 +109,7 @@ const Home = async () => {
               {t("hero_section.cta_main")}
             </Button>
             <div className="stats">
-              <div>
+              <div className="item">
                 <h3>50+</h3>
                 <p>
                   {t("hero_section.stat_locations_line1")}
@@ -117,7 +117,7 @@ const Home = async () => {
                   {t("hero_section.stat_locations_line2")}
                 </p>
               </div>
-              <div>
+              <div className="item">
                 <h3>1M+</h3>
                 <p>
                   {t("hero_section.stat_users_line1")}
@@ -470,7 +470,7 @@ const Home = async () => {
               {commentsData.map((data, index) => (
                 <CommentCard key={index} data={data} />
               ))}
-              <div className="comment-learn-more">
+              {/* <div className="comment-learn-more">
                 <div className="overlay">
                   <div className="learn-more-text">
                     {t("customer_stories.read_more_line1")} <br />{" "}
@@ -478,7 +478,7 @@ const Home = async () => {
                   </div>
                   <LearnMoretIcon className="learn-more-icon" />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="comments-mobile-container">
               <Slider dotPosition="bottomMiddle">
@@ -497,7 +497,7 @@ const Home = async () => {
                   </div>
                 ))}
               </div>
-              <NextDoubleArrowIcon />
+              {/* <NextDoubleArrowIcon /> */}
             </div>
           </div>
         </section>

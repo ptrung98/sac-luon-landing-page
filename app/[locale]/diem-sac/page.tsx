@@ -1,5 +1,6 @@
 import { Button } from "@/app/components/button";
 import { ArrowTopRightIcon } from "@/app/components/icons/arrow-top-right";
+import { TutorialIcon } from "@/app/components/icons/tutorial";
 import { SelectLocaltion } from "@/app/components/select-location";
 
 export default function ChargingPointPage() {
@@ -33,39 +34,11 @@ export default function ChargingPointPage() {
               </span>
               <div className="right">
                 <div>HƯỚNG DẪN TÌM ĐIỂM SẠC</div>
-                <Button
-                  type="primary"
-                  outlinePadding="medium"
-                  icon={
-                    <ArrowTopRightIcon
-                      width={12}
-                      height={12}
-                      style={{ marginLeft: "0.25rem" }}
-                    />
-                  }
-                >
-                  TÌM HIỂU THÊM
-                </Button>
+                <TutorialIcon width={20} height={20} />
               </div>
             </div>
           </div>
-          <div className="map">
-            <iframe
-              src="https://maps.google.com/maps?q=21.0285, 105.8542&hl=vi&z=15&output=embed"
-              style={{
-                border: 0,
-                width: "100%",
-                height: "100%",
-              }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map Location"
-            ></iframe>
-            <div className="select-location">
-              <SelectLocaltion />
-            </div>
-          </div>
+          <SelectLocaltion />
         </section>
       </div>
     </main>

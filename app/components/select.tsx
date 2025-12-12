@@ -47,9 +47,10 @@ const customStyles = {
 type CustomSelectProps = {
   options: {
     label: string;
-    value: string;
+    value: string | number;
   }[];
   placeholder: string;
+  onChange?: (selectedOption: any) => void;
 };
 
 export default function CustomSelect(props: CustomSelectProps) {
@@ -60,6 +61,7 @@ export default function CustomSelect(props: CustomSelectProps) {
         options={props.options}
         styles={customStyles}
         placeholder={props.placeholder}
+        onChange={props.onChange}
       />
     </div>
   );

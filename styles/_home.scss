@@ -708,8 +708,9 @@ body {
 
       .question-list {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
-        flex:1;
+        flex: 1;
         .question-item {
           border-radius: 5rem;
           background-color: #ffffff;
@@ -718,6 +719,7 @@ body {
           padding: 0.5rem 1rem;
           display: flex;
           align-items: center;
+          text-wrap: nowrap;
           p {
             padding: 0.5rem;
           }
@@ -750,7 +752,13 @@ body {
       }
 
       .hero-content-cta {
-        display: none;
+        // display: none;
+        flex-direction: column;
+        position: relative;
+
+        .stats, .tutorial{
+          display: none;
+        }
       }
     }
   }
@@ -918,7 +926,6 @@ body {
     .customer-stories-content-container {
       .question-list-container {
         .question-list {
-          overflow: auto;
           .question-item {
             min-width: 400px;
           }

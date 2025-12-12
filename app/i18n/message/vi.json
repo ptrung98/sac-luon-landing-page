@@ -186,5 +186,54 @@
                 "answer": "Cói Pin 20.000 mAh hỗ trợ sạc nhanh PD 20W + QC 3.0, kèm sẵn 3 dây: Lightning, Type-C, Micro USB."
             }
         ]
+    },
+    "CHARGING_POINTS": {
+        "items": [
+            {
+                "id": 1,
+                "name": "Hồ Hoàn Kiếm",
+                "address": "Quận Hoàn Kiếm, Hà Nội",
+                "location": {
+                    "lat": 21.028511,
+                    "lng": 105.854199
+                }
+            },
+            {
+                "id": 2,
+                "name": "Nhà Thờ Lớn Hà Nội",
+                "address": "40 Nhà Chung, Hàng Trống, Hoàn Kiếm",
+                "location": {
+                    "lat": 21.027961,
+                    "lng": 105.851722
+                }
+            },
+            {
+                "id": 3,
+                "name": "Lăng Chủ tịch Hồ Chí Minh",
+                "address": "2 Hùng Vương, Điện Biên, Ba Đình",
+                "location": {
+                    "lat": 21.036735,
+                    "lng": 105.834017
+                }
+            },
+            {
+                "id": 4,
+                "name": "Văn Miếu – Quốc Tử Giám",
+                "address": "58 Phố Quốc Tử Giám, Đống Đa",
+                "location": {
+                    "lat": 21.024097,
+                    "lng": 105.835154
+                }
+            },
+            {
+                "id": 5,
+                "name": "Nhà hát Lớn Hà Nội",
+                "address": "1 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+                "location": {
+                    "lat": 21.021008,
+                    "lng": 105.857647
+                }
+            }
+        ]
     }
 }

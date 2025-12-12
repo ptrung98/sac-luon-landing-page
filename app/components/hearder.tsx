@@ -103,9 +103,9 @@ export const Header = () => {
           </Button>
         </div>
 
-        <div className="menu-icon" onMouseLeave={handleClickMenuIcon}>
+        <div className="menu-icon">
           <MenuMobileIcon onClick={handleClickMenuIcon} />
-          <nav className={`nav-mobile ${isMenuOpen ? 'open' : 'closed'}`}>
+          <nav className={`nav-mobile ${isMenuOpen ? "open" : "closed"}`}>
             {menu.map((item, index) => (
               <a
                 href={item.href}
