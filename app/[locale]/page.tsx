@@ -1,12 +1,9 @@
 import { Button } from "../components/button";
-import { ArrowRightIcon } from "../components/icons/arrow-right";
 import { ArrowRightCircleIcon } from "../components/icons/arrow-right-circle";
 import { ArrowTopRightIcon } from "../components/icons/arrow-top-right";
 import Image from "next/image";
-import { NextDoubleArrowIcon } from "../components/icons/next-double-arrow";
 import { MaskBorder } from "../components/mask-border";
 import { CommentCard } from "../components/comment-card";
-import { LearnMoretIcon } from "../components/icons/learn-more";
 import { getTranslations } from "next-intl/server";
 import Slider from "../components/slider";
 
@@ -53,22 +50,46 @@ const Home = async () => {
 
   const commentsData = [
     {
-      avatar: "/home/comment-card-avatar-default.png",
+      avatar: "/home/comment-card-avatar-1.png",
       comment:
         "“Từ ngày sử dụng dịch vụ của SạcLuôn mình đã không còn phải lo lắng về việc mang theo dây sạc hay phải lo việc hết pin thường xuyên nữa. “",
       image: "/home/comment-card-image-default.png",
-      name: "ĐẶNG MINH ĐỨC",
+      name: "NGUYỄN QUANG HUY",
       startNumber: 4,
     },
     {
-      avatar: "/home/comment-card-avatar-default.png",
+      avatar: "/home/comment-card-avatar-2.png",
       comment:
-        "“Từ ngày sử dụng dịch vụ của SạcLuôn mình đã không còn phải lo lắng về việc mang theo dây sạc hay phải lo việc hết pin thường xuyên nữa. “",
+        "“Lần đầu dùng Sạc Luôn ở Vincom Bà Triệu mà nghiện luôn. Pin chất lượng thật, không bị chai hay nóng máy, thuê trả lại rất tiện, tối muộn về nhà vẫn thấy trạm gần chung cư có chỗ trống để trả. Recommend mạnh!“",
+      image: "/home/comment-card-image-default.png",
+      name: "ĐỖ ĐỨC HUY",
+      startNumber: 5,
+    },
+    {
+      avatar: "/home/comment-card-avatar-3.png",
+      comment:
+        "“Từ ngày sử dụng dịch vụ của SạcLuôn mình đã không còn phải lo lắng về việc mang theo dây sạc hay phải lo việc hết pin thường xuyên nữa.”",
       image: "/home/comment-card-image-default.png",
       name: "ĐẶNG MINH ĐỨC",
       startNumber: 5,
     },
+    {
+      avatar: "/home/comment-card-avatar-4.png",
+      comment:
+        "“Cứu cánh cho con nghiện sống ảo như mình! Pin Sạc Luôn lúc nào cũng đầy 100%, dây sạc đi kèm đủ cả  không cần mang theo. Trạm thuê chỗ này trả chỗ kia thoải mái. Giá rẻ hơn cả uống 1 ly trà sữa mà xài cả ngày.”",
+      name: "PHẠM LINH CHI",
+      startNumber: 5,
+    },
+    {
+      avatar: "/home/comment-card-avatar-5.png",
+      comment:
+        "“Đi công tác liên tục mà quên mang sạc, may có Sạc Luôn cứu nguy. Pin xài bền, sạc nhanh, trả sạc khác quận vẫn ok, giá cả lại minh bạch, phải chăng. Dịch vụ kiểu này đáng lẽ phải có từ lâu rồi, ủng hộ dài dài!”",
+      name: "HỒ MINH ANH",
+      startNumber: 5,
+    },
   ];
+
+  const commentsData2 = commentsData.concat(commentsData);
 
   const questions = [
     t("customer_stories.question_return_full"),
@@ -155,6 +176,10 @@ const Home = async () => {
                   type="secondary"
                   outlinePadding="medium"
                   icon={<ArrowTopRightIcon />}
+                  openLink={{
+                    href: "/faq",
+                    target: "_blank",
+                  }}
                 >
                   {t("features.card1_button")}
                 </Button>
@@ -266,14 +291,14 @@ const Home = async () => {
                 <li>• {t("why_choose.feature3")}</li>
                 <li>• {t("why_choose.feature4")}</li>
               </ul>
-              <Button
+              {/* <Button
                 type="primary"
                 outlinePadding="medium"
                 className="whychoose-button"
                 icon={<ArrowRightIcon width={10} height={10} />}
               >
                 {t("why_choose.button_text")}
-              </Button>
+              </Button> */}
             </div>
           </div>
         </section>
@@ -336,7 +361,7 @@ const Home = async () => {
                 {t("outstanding_features.title_line1")} <br />
                 {t("outstanding_features.title_line2")}
               </h1>
-              <div className="outstanding-features-title-cta">
+              {/* <div className="outstanding-features-title-cta">
                 <div>
                   {t("outstanding_features.cta_text_part1")}{" "}
                   <strong>
@@ -358,7 +383,7 @@ const Home = async () => {
                 >
                   {t("outstanding_features.button_text")}
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="outstanding-features-content-container">
@@ -418,6 +443,10 @@ const Home = async () => {
                   type="primary"
                   outlinePadding="none"
                   icon={<ArrowTopRightIcon width={19} height={19} />}
+                  openLink={{
+                    href: "/about",
+                    target: "_blank",
+                  }}
                 >
                   <i>{t("core_values.button_text")}</i>
                 </Button>
@@ -467,18 +496,9 @@ const Home = async () => {
 
           <div className="customer-stories-content-container">
             <div className="comments-container">
-              {commentsData.map((data, index) => (
+              {commentsData2.map((data, index) => (
                 <CommentCard key={index} data={data} />
               ))}
-              {/* <div className="comment-learn-more">
-                <div className="overlay">
-                  <div className="learn-more-text">
-                    {t("customer_stories.read_more_line1")} <br />{" "}
-                    {t("customer_stories.read_more_line2")}
-                  </div>
-                  <LearnMoretIcon className="learn-more-icon" />
-                </div>
-              </div> */}
             </div>
             <div className="comments-mobile-container">
               <Slider dotPosition="bottomMiddle">
@@ -492,12 +512,11 @@ const Home = async () => {
             <div className="question-list-container">
               <div className="question-list">
                 {questions.map((question, index) => (
-                  <div className="question-item" key={index}>
+                  <a className="question-item" key={index} href="/faq" target="_blank">
                     <p>{question}</p>
-                  </div>
+                  </a>
                 ))}
               </div>
-              {/* <NextDoubleArrowIcon /> */}
             </div>
           </div>
         </section>

@@ -12,7 +12,7 @@ export const TutorialIcon = (
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <circle cx="35" cy="35" r="35" fill="#FFDE15" fill-opacity="0.24" />
+      <circle cx="35" cy="35" r="35" fill="#FFDE15" fillOpacity="0.24" />
       <circle cx="34.9998" cy="35.0001" r="23.3333" fill="#FFDE15" />
       <circle
         cx="34.9998"

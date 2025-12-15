@@ -663,40 +663,42 @@ body {
   }
 
   .customer-stories-content-container {
+    overflow: hidden;
+
     .comments-container {
       display: flex;
-      gap: 1rem;
       margin-top: 2rem;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+      will-change: transform;
 
-      .comment-learn-more {
-        width: 25rem;
-        height: auto;
-        background: url("/home/comment-learn-more.png") center/cover no-repeat;
-        border-radius: 1.25rem;
-        text-align: end;
-        position: relative;
-        cursor: pointer;
+      & > * {
+        margin-right: 1rem;
+      }
 
-        .overlay {
-          background: #ffde15b8;
-          padding: 2rem;
-          border-radius: 1.25rem;
-          height: 100%;
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
         }
-
-        .learn-more-text {
-          position: absolute;
-          bottom: 1rem;
-          text-align: start;
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-        .learn-more-icon {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
+        100% {
+          transform: translateX(-50%);
         }
       }
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      // animation: marquee 10s linear infinite;
+      // @keyframes marquee {
+      //   0% {
+      //     transform: translateX(0); /* Bắt đầu từ vị trí gốc */
+      //   }
+      //   100% {
+      //     /* Trượt sang trái đúng một nửa tổng chiều rộng (tức là hết 1 danh sách) */
+      //     transform: translateX(-50%);
+      //   }
+      // }
     }
 
     .question-list-container {
@@ -720,6 +722,7 @@ body {
           display: flex;
           align-items: center;
           text-wrap: nowrap;
+          text-decoration: none;
           p {
             padding: 0.5rem;
           }
@@ -752,11 +755,11 @@ body {
       }
 
       .hero-content-cta {
-        // display: none;
         flex-direction: column;
         position: relative;
 
-        .stats, .tutorial{
+        .stats,
+        .tutorial {
           display: none;
         }
       }
@@ -927,7 +930,7 @@ body {
       .question-list-container {
         .question-list {
           .question-item {
-            min-width: 400px;
+            text-wrap: wrap;
           }
         }
       }

@@ -85,14 +85,13 @@
   max-width: 96rem;
   padding: 1rem;
   background-color: #fff;
-  // box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-  //   0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 1.25rem;
   border: 1px solid #ffde15;
 
   .testimonial-content-wrapper {
     display: flex;
     flex-direction: row;
+    max-width: 25rem;
 
     .testimonial-info {
       display: flex;
@@ -154,6 +153,12 @@
         height: auto;
         object-fit: cover;
       }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    .testimonial-content-wrapper {
+      width: 25rem;
     }
   }
 }

@@ -4,7 +4,6 @@ type CommentCardProps = {
   data: {
     avatar: string;
     comment: string;
-    image: string;
     name: string;
     startNumber: number;
   };
@@ -39,14 +38,6 @@ export const CommentCard = (props: CommentCardProps) => {
             {props.data.comment}
           </blockquote>
         </div>
-
-        {/* <div className="reviewer-image-box">
-          <img
-            className="reviewer-image"
-            src={props.data.image}
-            alt="Người đàn ông đang sử dụng dịch vụ SạcLuôn"
-          />
-        </div> */}
       </div>
     </div>
   );
