@@ -99,6 +99,17 @@ const Home = async () => {
 
   return (
     <main className="home">
+      <div className="social-contact-container">
+        <div className="social-contact-item">
+          <Image src="/home/messenger.png" alt="messenger" width={48} height={48} />
+        </div>
+        <div className="social-contact-item">
+          <Image src="/home/zalo.png" alt="zalo" width={48} height={48}/>
+        </div>
+        <div className="social-contact-item">
+          <Image src="/home/phone.png" alt="phone" width={48} height={48}/>
+        </div>
+      </div>
       <section className="hero">
         <div className="hero-background-container">
           <div className="overlay"></div>
@@ -512,7 +523,12 @@ const Home = async () => {
             <div className="question-list-container">
               <div className="question-list">
                 {questions.map((question, index) => (
-                  <a className="question-item" key={index} href="/faq" target="_blank">
+                  <a
+                    className="question-item"
+                    key={index}
+                    href="/faq"
+                    target="_blank"
+                  >
                     <p>{question}</p>
                   </a>
                 ))}

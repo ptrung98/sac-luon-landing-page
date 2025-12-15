@@ -8,6 +8,31 @@ body {
   box-sizing: border-box;
 }
 
+.home {
+  min-height: 100vh;
+  position: relative;
+  .social-contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+
+    .social-contact-item {
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+  }
+}
+
 .hero {
   display: flex;
   position: relative;
