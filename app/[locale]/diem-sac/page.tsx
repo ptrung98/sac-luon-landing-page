@@ -1,9 +1,10 @@
-import { Button } from "@/app/components/button";
-import { ArrowTopRightIcon } from "@/app/components/icons/arrow-top-right";
 import { TutorialIcon } from "@/app/components/icons/tutorial";
 import { SelectLocaltion } from "@/app/components/select-location";
+import { getTranslations } from "next-intl/server";
 
-export default function ChargingPointPage() {
+export default async function ChargingPointPage() {
+  const t = await getTranslations("ChargingPoint");
+
   return (
     <main className="charging-point">
       <section className="hero">
@@ -15,8 +16,8 @@ export default function ChargingPointPage() {
           <div className="image"></div>
           <div className="download-app-right">
             <span>
-              TẢI ỨNG DỤNG <br />
-              TÌM TRẠM SẠC NGAY
+              {t("download_app")} <br />
+              {t("find_now")}
             </span>
             <div className="link-app-button">
               <div className="app-store"></div>
@@ -27,13 +28,17 @@ export default function ChargingPointPage() {
 
         <section className="charging-point-list">
           <div className="charging-point-list-header">
-            <h4 className="text-hightlight-half">DANH SÁCH ĐIỂM SẠC</h4>
+            <h4 className="text-hightlight-half">{t("list_title")}</h4>
             <div className="cta">
               <span className="left">
-                TÌM NGAY <br /> ĐIỂM SẠC GẦN BẠN
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t("find_near_me"),
+                  }}
+                />
               </span>
               <div className="right">
-                <div>HƯỚNG DẪN TÌM ĐIỂM SẠC</div>
+                <div>{t("tutorial")}</div>
                 <TutorialIcon width={20} height={20} />
               </div>
             </div>

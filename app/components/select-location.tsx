@@ -16,36 +16,72 @@ interface ChargingPointItem {
     lat: number;
     lng: number;
   };
+  district_id: any;
+}
+
+interface Province {
+  id: any;
+  name: string;
+}
+
+interface District {
+  id: any;
+  name: string;
+  province_id: any;
 }
 
 export const SelectLocaltion = () => {
-  const [communeOptions] = useState([
-    { value: "x1", label: "Xã 1" },
-    { value: "x2", label: "Xã 2" },
-    { value: "x3", label: "Xã 3" },
-  ]);
-
-  const [cityOptions] = useState([
-    { value: "t1", label: "Thành phố 1" },
-    { value: "t2", label: "Thành phố 2" },
-    { value: "t3", label: "Thành phố 3" },
-  ]);
-
   const [chargingPointSelected, setChargingPointSelected] =
     useState<ChargingPointItem | null>(null);
 
-  const t = useTranslations("CHARGING_POINTS");
+  const t = useTranslations("ChargingPoint");
   const chargingPointItems = t.raw("items") as ChargingPointItem[];
-  const chargingPointItemOptions = chargingPointItems.map((item) => ({
-    value: item.id,
-    label: `${item.name} - ${item.address}`,
-  }));
+  const provinces = t.raw("provinces") as Province[];
+  const districts = t.raw("districts") as District[];
+
+  const [provinceOptions] = useState(
+    provinces.map((province) => ({
+      value: province.id,
+      label: province.name,
+    }))
+  );
+
+  const [districtOptions, setDistrictOptions] = useState<any[]>([]);
+  const [chargingPointItemOptions, setChargingPointItemOptions] = useState(
+    chargingPointItems.map((item) => ({
+      value: item.id,
+      label: `${item.name} - ${item.address}`,
+    }))
+  );
 
   const handleOnChangeLocation = (selectedOption: any) => {
     const selectedPoint = chargingPointItems.find(
       (item) => item.id === selectedOption.value
     );
     setChargingPointSelected(selectedPoint || null);
+  };
+
+  const handleOnChangeDistrict = (selectedOption: any) => {
+    const filteredChargingPoints = chargingPointItems.filter(
+      (item) => item["district_id"] === selectedOption.value
+    );  
+
+    setChargingPointItemOptions(filteredChargingPoints.map((item) => ({
+      value: item.id,
+      label: `${item.name} - ${item.address}`,
+    })));
+  };
+
+  const handleOnChangeProvince = (selectedOption: any) => {
+    const filteredDistricts = districts.filter(
+      (district) => district.province_id === selectedOption.value
+    );
+    const newDistrictOptions = filteredDistricts.map((district) => ({
+      value: district.id,
+      label: district.name,
+      province_id: district.province_id,
+    }));
+    setDistrictOptions(newDistrictOptions);
   };
 
   return (
@@ -64,11 +100,19 @@ export const SelectLocaltion = () => {
       ></iframe>
       <div className="select-location">
         <div style={{ display: "flex", gap: "2rem" }}>
-          <CustomSelect options={communeOptions} placeholder="Xã" />
-          <CustomSelect options={cityOptions} placeholder="Thành phố" />
+          <CustomSelect
+            options={provinceOptions}
+            placeholder={t("province")}
+            onChange={handleOnChangeProvince}
+          />
+          <CustomSelect
+            options={districtOptions}
+            placeholder={t("district")}
+            onChange={handleOnChangeDistrict}
+          />
           <CustomSelect
             options={chargingPointItemOptions}
-            placeholder="Điểm sạc"
+            placeholder={t("charging_point")}
             onChange={handleOnChangeLocation}
           />
         </div>

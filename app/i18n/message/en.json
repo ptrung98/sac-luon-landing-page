@@ -181,7 +181,42 @@
             }
         ]
     },
-    "CHARGING_POINTS": {
+    "ChargingPoint": {
+        "download_app": "DOWNLOAD APP",
+        "find_now": "FIND CHARGING STATION",
+        "list_title": "CHARGING POINT LIST",
+        "find_near_me": "FIND NOW <br /> STATIONS NEAR YOU",
+        "tutorial": "GUIDE TO FIND STATIONS",
+        "province": "City",
+        "district": "District",
+        "charging_point": "Charging Point",
+        "provinces": [
+            {
+                "id": 1,
+                "name": "Hà Nội"
+            },
+            {
+                "id": 2,
+                "name": "TP. Hồ Chí Minh"
+            }
+        ],
+        "districts": [
+            {
+                "id": 1,
+                "name": "Quận Hoàn Kiếm",
+                "province_id": 1
+            },
+            {
+                "id": 2,
+                "name": "Đống Đa",
+                "province_id": 1
+            },
+            {
+                "id": 3,
+                "name": "Ba Đình",
+                "province_id": 1
+            }
+        ],
         "items": [
             {
                 "id": 1,
@@ -190,7 +225,8 @@
                 "location": {
                     "lat": 21.028511,
                     "lng": 105.854199
-                }
+                },
+                "district_id": 1
             },
             {
                 "id": 2,
@@ -199,7 +235,8 @@
                 "location": {
                     "lat": 21.027961,
                     "lng": 105.851722
-                }
+                },
+                "district_id": 1
             },
             {
                 "id": 3,
@@ -208,7 +245,8 @@
                 "location": {
                     "lat": 21.036735,
                     "lng": 105.834017
-                }
+                },
+                "district_id": 1
             },
             {
                 "id": 4,
@@ -217,7 +255,8 @@
                 "location": {
                     "lat": 21.024097,
                     "lng": 105.835154
-                }
+                },
+                "district_id": 1
             },
             {
                 "id": 5,
@@ -226,7 +265,8 @@
                 "location": {
                     "lat": 21.021008,
                     "lng": 105.857647
-                }
+                },
+                "district_id": 1
             }
         ]
     }
