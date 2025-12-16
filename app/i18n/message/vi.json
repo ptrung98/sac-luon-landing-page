@@ -55,6 +55,14 @@
             "step3_desc": "Trả pin tại bất kỳ trạm nào trong hệ thống. Hệ thống tự ghi nhận và thanh toán tự động.",
             "button_text": "KHÁM PHÁ TRẠM GẦN BẠN"
         },
+        "easy_to_use": {
+            "subtitle": "SỬ DỤNG DỄ DÀNG",
+            "title": "HOÀN TIỀN NHANH CHÓNG",
+            "step": "Bước",
+            "step1_desc": "Chọn pin phù hợp với bạn từ màn hình trạm sạc",
+            "step2_desc": "Quét mã thanh toán cọc thuê pin và sử dụng",
+            "step3_desc": "Trả lại pin và nhận lại tiền cọc thuê chỉ trong 1-2 phút"
+        },
         "outstanding_features": {
             "subtitle": "Tính năng nổi bật",
             "title_line1": "Công nghệ tiên tiến",

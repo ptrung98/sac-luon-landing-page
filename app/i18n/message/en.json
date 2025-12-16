@@ -55,6 +55,13 @@
             "step3_desc": "Return the power bank at any station in the system. The system automatically records the return and processes payment.",
             "button_text": "EXPLORE STATIONS NEAR YOU"
         },
+        "easy_to_use": {
+            "subtitle": "EASY TO USE",
+            "title": "FAST REFUNDS",
+            "step1_desc": "Select the suitable battery from the charging station screen",
+            "step2_desc": "Scan the code to pay the battery rental deposit and start using",
+            "step3_desc": "Return the battery and get your rental deposit back in just 1-2 minutes"
+        },
         "outstanding_features": {
             "subtitle": "Outstanding Features",
             "title_line1": "Advanced Technology",

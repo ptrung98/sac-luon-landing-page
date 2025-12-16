@@ -6,10 +6,26 @@ import { MaskBorder } from "../components/mask-border";
 import { CommentCard } from "../components/comment-card";
 import { getTranslations } from "next-intl/server";
 import Slider from "../components/slider";
+import path from "path";
+import fs from "fs/promises";
+
+async function getConfigData() {
+  const projectRoot = process.cwd();
+  const filePath = path.join(projectRoot, "public", "config.json");
+  try {
+    const fileContents = await fs.readFile(filePath, "utf8");
+    const config = JSON.parse(fileContents);
+    return config;
+  } catch (error) {
+    console.error("Lỗi khi đọc file JSON:", error);
+    return null;
+  }
+}
 
 const Home = async () => {
+  const config = await getConfigData();
   const t = await getTranslations("HomePage");
-
+  console.log("config in home page:", config.contact_zalo);
   const outstandingFeatureItems = [
     {
       title: t("outstanding_features.feature1_title"),
@@ -45,6 +61,21 @@ const Home = async () => {
     {
       title: t("how_to_use.step3_title"),
       desc: t("how_to_use.step3_desc"),
+    },
+  ];
+
+  const easyToUseSteps = [
+    {
+      image: "/home/easy-to-use-step-1.png",
+      desc: t("easy_to_use.step1_desc"),
+    },
+    {
+      image: "/home/easy-to-use-step-2.png",
+      desc: t("easy_to_use.step2_desc"),
+    },
+    {
+      image: "/home/easy-to-use-step-3.png",
+      desc: t("easy_to_use.step3_desc"),
     },
   ];
 
@@ -100,15 +131,32 @@ const Home = async () => {
   return (
     <main className="home">
       <div className="social-contact-container">
-        <div className="social-contact-item">
-          <Image src="/home/messenger.png" alt="messenger" width={48} height={48} />
-        </div>
-        <div className="social-contact-item">
-          <Image src="/home/zalo.png" alt="zalo" width={48} height={48}/>
-        </div>
-        <div className="social-contact-item">
-          <Image src="/home/phone.png" alt="phone" width={48} height={48}/>
-        </div>
+        <a
+          className="social-contact-item"
+          href={`https://zalo.me/${config.contact_zalo}`}
+          target="_blank"
+        >
+          <Image
+            src="/home/messenger.png"
+            alt="messenger"
+            width={48}
+            height={48}
+          />
+        </a>
+        <a
+          className="social-contact-item"
+          href={`https://zalo.me/${config.contact_zalo}`}
+          target="_blank"
+        >
+          <Image src="/home/zalo.png" alt="zalo" width={48} height={48} />
+        </a>
+        <a
+          className="social-contact-item"
+          href={`tel:${config.call_phone}`}
+          target="_blank"
+        >
+          <Image src="/home/phone.png" alt="phone" width={48} height={48} />
+        </a>
       </div>
       <section className="hero">
         <div className="hero-background-container">
@@ -282,9 +330,7 @@ const Home = async () => {
                 </span>
               </h3>
 
-              <h1 className="whychoose-title text-hightlight-half">
-                {t("why_choose.title")}
-              </h1>
+              <h1 className="whychoose-title">{t("why_choose.title")}</h1>
 
               <p className="whychoose-desc">
                 {t("why_choose.description_line1")}
@@ -362,6 +408,33 @@ const Home = async () => {
             </div>
           </div>
         </section>
+        <section className="easy-to-use">
+          <div className="easy-to-use-header">
+            <h3 className="easy-to-use-subtitle text-hightlight-half">
+              {t("easy_to_use.subtitle")}
+            </h3>
+            <h1 className="easy-to-use-title">{t("easy_to_use.title")}</h1>
+          </div>
+          <div className="easy-to-use-container">
+            {easyToUseSteps.map((item, index) => (
+              <div className="step-item" key={index}>
+                <div className="image-container">
+                  <Image
+                    className="image"
+                    src={item.image}
+                    alt={item.desc}
+                    fill
+                  />
+                </div>
+                <p className="desc">
+                  <span>{t("easy_to_use.step") + " " + (index + 1) + ":"}</span>
+                  <br />
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
         <section className="outstanding-features">
           <div className="outstanding-features-header">
             <h3 className="outstanding-features-subtitle text-hightlight-half">
@@ -425,9 +498,7 @@ const Home = async () => {
               <h1 className="core-values-title">
                 {t("core_values.title_line1")}
                 <br />
-                <span className="text-hightlight-half">
-                  {t("core_values.title_line2")}
-                </span>
+                <span>{t("core_values.title_line2")}</span>
               </h1>
             </div>
             <div className="core-values-title-cta">
