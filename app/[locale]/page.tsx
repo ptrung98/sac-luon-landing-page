@@ -163,12 +163,14 @@ const Home = async () => {
           <div className="overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>{t("hero_section.hero_title")}</h1>
-          <p>
-            {t("hero_section.hero_subtitle_line1")}
-            <br />
-            {t("hero_section.hero_subtitle_line2")}
-          </p>
+          <div>
+            <h1>{t("hero_section.hero_title")}</h1>
+            <p className="subtitle">
+              {t("hero_section.hero_subtitle_line1")}
+              <br />
+              {t("hero_section.hero_subtitle_line2")}
+            </p>
+          </div>
 
           <div className="hero-content-cta">
             <Button

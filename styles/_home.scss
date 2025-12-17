@@ -44,6 +44,7 @@ body {
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+    gap: 3rem;
 
     h1 {
       font-size: 6rem;
@@ -52,7 +53,7 @@ body {
       font-family: var(--font-DFVN-MBF-Space-Habitat);
     }
 
-    p {
+    .subtitle {
       margin-top: 1rem;
       padding-left: 1rem;
       font-size: 1.5rem;
@@ -64,13 +65,11 @@ body {
       display: flex;
       align-items: center;
       gap: 2rem;
-      margin-top: 2rem;
 
       .stats {
         display: flex;
         flex-direction: row;
         gap: 3rem;
-        margin-top: 2rem;
 
         h3 {
           font-size: 2.25rem;
@@ -85,6 +84,7 @@ body {
       .tutorial {
         p {
           font-size: 1.25rem;
+          color: #fff;
         }
 
         .btn-tutorial {
@@ -154,7 +154,7 @@ body {
       flex-direction: column;
       position: relative;
       background: url("/home/feature-1.png") center/cover no-repeat;
-      aspect-ratio: 1 / 1;
+      height: 25rem;
 
       .content {
         display: flex;
@@ -183,7 +183,8 @@ body {
       height: 31.75rem;
       position: relative;
       background: url("/home/feature-2.png") center/cover no-repeat;
-      aspect-ratio: 1 / 1.5;
+      height: 30rem;
+      min-height: max-content;
 
       .content {
         display: flex;
@@ -207,7 +208,7 @@ body {
       position: relative;
       background: url("/home/feature-3.png") center/cover no-repeat;
       text-transform: uppercase;
-      aspect-ratio: 1 / 1;
+      min-height: max-content;
 
       .text-1 {
         font-size: 3rem;
