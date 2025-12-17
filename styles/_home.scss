@@ -85,16 +85,17 @@ body {
         p {
           font-size: 1.25rem;
           color: #fff;
+          margin-bottom: 0.5rem;
         }
 
         .btn-tutorial {
-          margin-top: 0.5rem;
           background: transparent;
           color: #fff;
           font-weight: 600;
           font-size: 1.25rem;
           border: none;
-          cursor: pointer;
+          text-decoration: none;
+          
           span {
             margin-right: 1rem;
           }
@@ -108,17 +109,20 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url("/home/banner.png") center/cover no-repeat;
+  // background: url("/home/banner.png") center/cover no-repeat;
+
+  background: linear-gradient(
+      180deg,
+      #0c0022 0%,
+      rgba(18, 7, 59, 0.5) 50%,
+      rgba(255, 222, 21, 0) 100%
+    ),
+    url("/home/banner.png") center/cover no-repeat;
 
   .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      #0c0022 0%,
-      rgba(18, 7, 59, 0.5) 42.07%,
-      rgba(255, 222, 21, 0) 96.49%
-    );
+
     pointer-events: none;
   }
 }
@@ -187,7 +191,6 @@ body {
       // height: 30rem;
       // min-height: max-content;
       max-height: 25rem;
-
 
       .content {
         display: flex;
@@ -498,7 +501,7 @@ body {
         text-align: center;
         font-size: 1.25rem;
 
-        span{
+        span {
           font-weight: 500;
         }
       }
@@ -550,8 +553,23 @@ body {
     flex-wrap: nowrap;
     gap: 1rem;
     width: 100%;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      pointer-events: none;
+      background: #ffde1566;
+      border-radius: 50%;
+      width: 100%;
+      height: 86px;
+      /* padding: 20px; */
+      position: absolute;
+      top: 140px;
+      box-shadow: 0 0 70px 20px #ffde1580;
+    }
 
     .feature-item {
+      z-index: 10;
       flex: 1;
       border-radius: 1rem;
       position: relative;
@@ -559,9 +577,11 @@ body {
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(#fff0 12.9%, #fff 81.17%);
+      // background: linear-gradient(#fff0 12.9%, #fff 81.17%);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: #fff;
 
+      // z-index: 10;
       .image-container {
         position: relative;
         z-index: -1;

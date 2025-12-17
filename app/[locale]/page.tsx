@@ -213,10 +213,10 @@ const Home = async () => {
                 {t("hero_section.tutorial_prompt_line1")} <br />
                 {t("hero_section.tutorial_prompt_line2")}
               </p>
-              <button className="btn-tutorial">
+              <a className="btn-tutorial" href="#how-to-use">
                 <span>{t("hero_section.tutorial_cta")}</span>{" "}
                 <ArrowRightCircleIcon />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -361,7 +361,7 @@ const Home = async () => {
             </div>
           </div>
         </section>
-        <section className="howtouse">
+        <section className="howtouse" id="how-to-use">
           <div className="howtouse-header">
             <h3 className="howtouse-subtitle text-hightlight-half">
               {t("how_to_use.subtitle")}
@@ -473,6 +473,7 @@ const Home = async () => {
             </div>
           </div>
           <div className="outstanding-features-content-container">
+            <div className="overlay"></div>
             {outstandingFeatureItems.map((item, index) => (
               <div className="feature-item" key={index}>
                 <div className="image-container">
