@@ -233,7 +233,7 @@ const Home = async () => {
                   <div className="item">{t("features.card1_item1")}</div>
                   <div className="item">{t("features.card1_item2")}</div>
                 </div>
-                <Button
+                {/* <Button
                   type="secondary"
                   outlinePadding="medium"
                   icon={<ArrowTopRightIcon />}
@@ -243,7 +243,7 @@ const Home = async () => {
                   }}
                 >
                   {t("features.card1_button")}
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

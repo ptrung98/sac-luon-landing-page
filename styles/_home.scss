@@ -154,7 +154,8 @@ body {
       flex-direction: column;
       position: relative;
       background: url("/home/feature-1.png") center/cover no-repeat;
-      height: 25rem;
+      max-height: 25rem;
+      min-height: max-content;
 
       .content {
         display: flex;
@@ -183,8 +184,10 @@ body {
       height: 31.75rem;
       position: relative;
       background: url("/home/feature-2.png") center/cover no-repeat;
-      height: 30rem;
-      min-height: max-content;
+      // height: 30rem;
+      // min-height: max-content;
+      max-height: 25rem;
+
 
       .content {
         display: flex;
@@ -224,7 +227,7 @@ body {
         font-weight: 500;
         font-style: Medium;
         font-size: 2rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
       }
     }
   }
